@@ -1,0 +1,252 @@
+Simulator report for xuanzeqi
+Tue Jan 09 23:18:43 2018
+Quartus II Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 30.0 ns      ;
+; Simulation Netlist Size     ; 63 nodes     ;
+; Simulation Coverage         ;      30.16 % ;
+; Total Number of Transitions ; 86           ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Stratix II   ;
++-----------------------------+--------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                        ;
++--------------------------------------------------------------------------------------------+--------------+---------------+
+; Option                                                                                     ; Setting      ; Default Value ;
++--------------------------------------------------------------------------------------------+--------------+---------------+
+; Simulation mode                                                                            ; Functional   ; Timing        ;
+; Start time                                                                                 ; 0 ns         ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF         ;               ;
+; Vector input source                                                                        ; xuanzeqi.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On           ; On            ;
+; Check outputs                                                                              ; Off          ; Off           ;
+; Report simulation coverage                                                                 ; On           ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On           ; On            ;
+; Display missing 1-value coverage report                                                    ; On           ; On            ;
+; Display missing 0-value coverage report                                                    ; On           ; On            ;
+; Detect setup and hold time violations                                                      ; Off          ; Off           ;
+; Detect glitches                                                                            ; Off          ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off          ; Off           ;
+; Generate Signal Activity File                                                              ; Off          ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off          ; Off           ;
+; Group bus channels in simulation results                                                   ; Off          ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On           ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE   ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off          ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off          ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto         ; Auto          ;
++--------------------------------------------------------------------------------------------+--------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      30.16 % ;
+; Total nodes checked                                 ; 63           ;
+; Total output ports checked                          ; 63           ;
+; Total output ports with complete 1/0-value coverage ; 19           ;
+; Total output ports with no 1/0-value coverage       ; 28           ;
+; Total output ports with no 1-value coverage         ; 29           ;
+; Total output ports with no 0-value coverage         ; 43           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                ;
++--------------------+--------------------+------------------+
+; Node Name          ; Output Port Name   ; Output Port Type ;
++--------------------+--------------------+------------------+
+; |xuanzeqi|o[7]~0   ; |xuanzeqi|o[7]~0   ; out              ;
+; |xuanzeqi|o[6]~1   ; |xuanzeqi|o[6]~1   ; out              ;
+; |xuanzeqi|o[5]~2   ; |xuanzeqi|o[5]~2   ; out              ;
+; |xuanzeqi|o[4]~3   ; |xuanzeqi|o[4]~3   ; out              ;
+; |xuanzeqi|o[4]~16  ; |xuanzeqi|o[4]~16  ; out              ;
+; |xuanzeqi|o[4]~17  ; |xuanzeqi|o[4]~17  ; out              ;
+; |xuanzeqi|o[5]~18  ; |xuanzeqi|o[5]~18  ; out              ;
+; |xuanzeqi|o[5]~19  ; |xuanzeqi|o[5]~19  ; out              ;
+; |xuanzeqi|o[6]~20  ; |xuanzeqi|o[6]~20  ; out              ;
+; |xuanzeqi|o[6]~21  ; |xuanzeqi|o[6]~21  ; out              ;
+; |xuanzeqi|o[7]~23  ; |xuanzeqi|o[7]~23  ; out              ;
+; |xuanzeqi|o[7]~24  ; |xuanzeqi|o[7]~24  ; out0             ;
+; |xuanzeqi|o[7]~25  ; |xuanzeqi|o[7]~25  ; out              ;
+; |xuanzeqi|MADD[0]  ; |xuanzeqi|MADD[0]  ; out              ;
+; |xuanzeqi|o[4]     ; |xuanzeqi|o[4]     ; pin_out          ;
+; |xuanzeqi|o[5]     ; |xuanzeqi|o[5]     ; pin_out          ;
+; |xuanzeqi|o[6]     ; |xuanzeqi|o[6]     ; pin_out          ;
+; |xuanzeqi|o[7]     ; |xuanzeqi|o[7]     ; pin_out          ;
+; |xuanzeqi|Equal1~0 ; |xuanzeqi|Equal1~0 ; out0             ;
++--------------------+--------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++------------------------------------------------------------+
+; Missing 1-Value Coverage                                   ;
++--------------------+--------------------+------------------+
+; Node Name          ; Output Port Name   ; Output Port Type ;
++--------------------+--------------------+------------------+
+; |xuanzeqi|o[3]~4   ; |xuanzeqi|o[3]~4   ; out              ;
+; |xuanzeqi|o[2]~5   ; |xuanzeqi|o[2]~5   ; out              ;
+; |xuanzeqi|o[1]~6   ; |xuanzeqi|o[1]~6   ; out              ;
+; |xuanzeqi|o[0]~7   ; |xuanzeqi|o[0]~7   ; out              ;
+; |xuanzeqi|i0[0]    ; |xuanzeqi|i0[0]    ; out              ;
+; |xuanzeqi|i0[1]    ; |xuanzeqi|i0[1]    ; out              ;
+; |xuanzeqi|i0[2]    ; |xuanzeqi|i0[2]    ; out              ;
+; |xuanzeqi|i0[3]    ; |xuanzeqi|i0[3]    ; out              ;
+; |xuanzeqi|i0[4]    ; |xuanzeqi|i0[4]    ; out              ;
+; |xuanzeqi|i0[5]    ; |xuanzeqi|i0[5]    ; out              ;
+; |xuanzeqi|i0[6]    ; |xuanzeqi|i0[6]    ; out              ;
+; |xuanzeqi|i0[7]    ; |xuanzeqi|i0[7]    ; out              ;
+; |xuanzeqi|i1[0]    ; |xuanzeqi|i1[0]    ; out              ;
+; |xuanzeqi|i1[1]    ; |xuanzeqi|i1[1]    ; out              ;
+; |xuanzeqi|i1[2]    ; |xuanzeqi|i1[2]    ; out              ;
+; |xuanzeqi|i1[3]    ; |xuanzeqi|i1[3]    ; out              ;
+; |xuanzeqi|i1[4]    ; |xuanzeqi|i1[4]    ; out              ;
+; |xuanzeqi|i1[5]    ; |xuanzeqi|i1[5]    ; out              ;
+; |xuanzeqi|i1[6]    ; |xuanzeqi|i1[6]    ; out              ;
+; |xuanzeqi|i1[7]    ; |xuanzeqi|i1[7]    ; out              ;
+; |xuanzeqi|i2[0]    ; |xuanzeqi|i2[0]    ; out              ;
+; |xuanzeqi|i2[1]    ; |xuanzeqi|i2[1]    ; out              ;
+; |xuanzeqi|i2[2]    ; |xuanzeqi|i2[2]    ; out              ;
+; |xuanzeqi|i2[3]    ; |xuanzeqi|i2[3]    ; out              ;
+; |xuanzeqi|i2[4]    ; |xuanzeqi|i2[4]    ; out              ;
+; |xuanzeqi|i2[5]    ; |xuanzeqi|i2[5]    ; out              ;
+; |xuanzeqi|i2[6]    ; |xuanzeqi|i2[6]    ; out              ;
+; |xuanzeqi|i2[7]    ; |xuanzeqi|i2[7]    ; out              ;
+; |xuanzeqi|Equal0~0 ; |xuanzeqi|Equal0~0 ; out0             ;
++--------------------+--------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++------------------------------------------------------------+
+; Missing 0-Value Coverage                                   ;
++--------------------+--------------------+------------------+
+; Node Name          ; Output Port Name   ; Output Port Type ;
++--------------------+--------------------+------------------+
+; |xuanzeqi|o[3]~4   ; |xuanzeqi|o[3]~4   ; out              ;
+; |xuanzeqi|o[2]~5   ; |xuanzeqi|o[2]~5   ; out              ;
+; |xuanzeqi|o[1]~6   ; |xuanzeqi|o[1]~6   ; out              ;
+; |xuanzeqi|o[0]~7   ; |xuanzeqi|o[0]~7   ; out              ;
+; |xuanzeqi|o[0]~8   ; |xuanzeqi|o[0]~8   ; out              ;
+; |xuanzeqi|o[0]~9   ; |xuanzeqi|o[0]~9   ; out              ;
+; |xuanzeqi|o[1]~10  ; |xuanzeqi|o[1]~10  ; out              ;
+; |xuanzeqi|o[1]~11  ; |xuanzeqi|o[1]~11  ; out              ;
+; |xuanzeqi|o[2]~12  ; |xuanzeqi|o[2]~12  ; out              ;
+; |xuanzeqi|o[2]~13  ; |xuanzeqi|o[2]~13  ; out              ;
+; |xuanzeqi|o[3]~14  ; |xuanzeqi|o[3]~14  ; out              ;
+; |xuanzeqi|o[3]~15  ; |xuanzeqi|o[3]~15  ; out              ;
+; |xuanzeqi|o[7]~22  ; |xuanzeqi|o[7]~22  ; out0             ;
+; |xuanzeqi|MADD[1]  ; |xuanzeqi|MADD[1]  ; out              ;
+; |xuanzeqi|i0[0]    ; |xuanzeqi|i0[0]    ; out              ;
+; |xuanzeqi|i0[1]    ; |xuanzeqi|i0[1]    ; out              ;
+; |xuanzeqi|i0[2]    ; |xuanzeqi|i0[2]    ; out              ;
+; |xuanzeqi|i0[3]    ; |xuanzeqi|i0[3]    ; out              ;
+; |xuanzeqi|i0[4]    ; |xuanzeqi|i0[4]    ; out              ;
+; |xuanzeqi|i0[5]    ; |xuanzeqi|i0[5]    ; out              ;
+; |xuanzeqi|i0[6]    ; |xuanzeqi|i0[6]    ; out              ;
+; |xuanzeqi|i0[7]    ; |xuanzeqi|i0[7]    ; out              ;
+; |xuanzeqi|i1[0]    ; |xuanzeqi|i1[0]    ; out              ;
+; |xuanzeqi|i1[1]    ; |xuanzeqi|i1[1]    ; out              ;
+; |xuanzeqi|i1[2]    ; |xuanzeqi|i1[2]    ; out              ;
+; |xuanzeqi|i1[3]    ; |xuanzeqi|i1[3]    ; out              ;
+; |xuanzeqi|i1[4]    ; |xuanzeqi|i1[4]    ; out              ;
+; |xuanzeqi|i1[5]    ; |xuanzeqi|i1[5]    ; out              ;
+; |xuanzeqi|i1[6]    ; |xuanzeqi|i1[6]    ; out              ;
+; |xuanzeqi|i1[7]    ; |xuanzeqi|i1[7]    ; out              ;
+; |xuanzeqi|i2[0]    ; |xuanzeqi|i2[0]    ; out              ;
+; |xuanzeqi|i2[1]    ; |xuanzeqi|i2[1]    ; out              ;
+; |xuanzeqi|i2[2]    ; |xuanzeqi|i2[2]    ; out              ;
+; |xuanzeqi|i2[3]    ; |xuanzeqi|i2[3]    ; out              ;
+; |xuanzeqi|i2[4]    ; |xuanzeqi|i2[4]    ; out              ;
+; |xuanzeqi|i2[5]    ; |xuanzeqi|i2[5]    ; out              ;
+; |xuanzeqi|i2[6]    ; |xuanzeqi|i2[6]    ; out              ;
+; |xuanzeqi|i2[7]    ; |xuanzeqi|i2[7]    ; out              ;
+; |xuanzeqi|o[0]     ; |xuanzeqi|o[0]     ; pin_out          ;
+; |xuanzeqi|o[1]     ; |xuanzeqi|o[1]     ; pin_out          ;
+; |xuanzeqi|o[2]     ; |xuanzeqi|o[2]     ; pin_out          ;
+; |xuanzeqi|o[3]     ; |xuanzeqi|o[3]     ; pin_out          ;
+; |xuanzeqi|Equal2~0 ; |xuanzeqi|Equal2~0 ; out0             ;
++--------------------+--------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+    Info: Processing started: Tue Jan 09 23:18:43 2018
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off xuanzeqi -c xuanzeqi
+Info: Using vector source file "D:/Program Files/qurtus2/quartus/CPU_jianyanpro/xuanzeqi/xuanzeqi.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      30.16 %
+Info: Number of transitions in simulation is 86
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 174 megabytes
+    Info: Processing ended: Tue Jan 09 23:18:43 2018
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+

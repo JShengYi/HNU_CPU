@@ -1,0 +1,14 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity status_3 is
+    port(en:in std_logic;
+         i:in std_logic_vector(7 downto 0);
+         o:out std_logic_vector(7 downto 0));
+end status_3;
+
+architecture one of status_3 is
+begin
+    o <= "ZZZZZZZZ" when en = '0' else
+          i;
+end one;

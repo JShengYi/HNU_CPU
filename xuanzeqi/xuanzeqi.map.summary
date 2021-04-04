@@ -1,0 +1,15 @@
+Analysis & Synthesis Status : Successful - Wed Jan 03 20:45:04 2018
+Quartus II Version : 9.0 Build 184 04/29/2009 SP 1 SJ Web Edition
+Revision Name : xuanzeqi
+Top-level Entity Name : xuanzeqi
+Family : Stratix II
+Logic utilization : N/A
+    Combinational ALUTs : 9
+    Dedicated logic registers : 0
+Total registers : 0
+Total pins : 34
+Total virtual pins : 0
+Total block memory bits : 0
+DSP block 9-bit elements : 0
+Total PLLs : 0
+Total DLLs : 0

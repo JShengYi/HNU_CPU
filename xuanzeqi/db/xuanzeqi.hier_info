@@ -1,0 +1,41 @@
+|xuanzeqi
+MADD[0] => Equal0.IN0
+MADD[0] => Equal1.IN1
+MADD[0] => Equal2.IN0
+MADD[1] => Equal0.IN1
+MADD[1] => Equal1.IN0
+MADD[1] => Equal2.IN1
+i0[0] => o[0]~8.DATAB
+i0[1] => o[1]~10.DATAB
+i0[2] => o[2]~12.DATAB
+i0[3] => o[3]~14.DATAB
+i0[4] => o[4]~16.DATAB
+i0[5] => o[5]~18.DATAB
+i0[6] => o[6]~20.DATAB
+i0[7] => o[7]~23.DATAB
+i1[0] => o[0]~7.DATAB
+i1[1] => o[1]~6.DATAB
+i1[2] => o[2]~5.DATAB
+i1[3] => o[3]~4.DATAB
+i1[4] => o[4]~3.DATAB
+i1[5] => o[5]~2.DATAB
+i1[6] => o[6]~1.DATAB
+i1[7] => o[7]~0.DATAB
+i2[0] => o[0]~7.DATAA
+i2[1] => o[1]~6.DATAA
+i2[2] => o[2]~5.DATAA
+i2[3] => o[3]~4.DATAA
+i2[4] => o[4]~3.DATAA
+i2[5] => o[5]~2.DATAA
+i2[6] => o[6]~1.DATAA
+i2[7] => o[7]~0.DATAA
+o[0] <= o[0]~9.DB_MAX_OUTPUT_PORT_TYPE
+o[1] <= o[1]~11.DB_MAX_OUTPUT_PORT_TYPE
+o[2] <= o[2]~13.DB_MAX_OUTPUT_PORT_TYPE
+o[3] <= o[3]~15.DB_MAX_OUTPUT_PORT_TYPE
+o[4] <= o[4]~17.DB_MAX_OUTPUT_PORT_TYPE
+o[5] <= o[5]~19.DB_MAX_OUTPUT_PORT_TYPE
+o[6] <= o[6]~21.DB_MAX_OUTPUT_PORT_TYPE
+o[7] <= o[7]~25.DB_MAX_OUTPUT_PORT_TYPE
+
+

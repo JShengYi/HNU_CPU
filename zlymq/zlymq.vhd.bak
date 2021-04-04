@@ -1,0 +1,28 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity zlymq is
+    port(IR:in std_logic_vector(7 downto 0);         
+         EN:in std_logic; 
+         MOVA,MOVB,MOVC,ALU,NOT0,SHL,SHR,JMP,JZ,JC,IN0,OUT0,NOP,HALT:out std_logic);
+end zlymq;
+
+architecture one of zlymq is
+signal sum:std_logic_vector(8 downto 0);
+begin
+	sum <= EN & IR;
+	MOVA <= '1' when sum(8 downto 4)="10011" and sum(1 downto 0)/="11" and sum(3 downto 2)/="11"  else '0';
+	MOVB <= '1' when sum(8 downto 4)="10011" and sum(3 downto 2)="11" and sum(1 downto 0)/="11"  else '0';
+	MOVC <= '1' when sum(8 downto 4)="10011" and sum(1 downto 0)="11" and sum(3 downto 2)/="11"  else '0';
+	ALU <= '1' when (sum(8 downto 4)="11001" or sum(8 downto 4)="10110" or sum(8 downto 4)="11110") and sum(1 downto 0)/="11" and sum(3 downto 2)/="11" else '0';
+	NOT0 <= '1' when sum(8 downto 4)="10101" and sum(3 downto 2)/="11"  else '0';
+	SHR <= '1' when sum(8 downto 4)="11010" and sum(1 downto 0)="00" and sum(3 downto 2)/="11"  else '0';
+	SHL <= '1' when sum(8 downto 4)="11010" and sum(1 downto 0)="11" and sum(3 downto 2)/="11"  else '0';
+	JMP <= '1' when sum(8 downto 0)="100010000" else '0';
+	JZ <= '1' when sum(8 downto 0)="100010001" else '0';
+	JC <= '1' when sum(8 downto 0)="100010010" else '0';
+	IN0 <= '1' when sum(8 downto 4)="10010" and sum(3 downto 2)/="11"  else '0';
+	OUT0 <= '1' when sum(8 downto 4)="10100" and sum(3 downto 2)/="11"  else '0';
+	NOP <= '1' when sum(8 downto 0)="101110000" else '0';
+	HALT <= '1' when sum(8 downto 0)="100000000" else '0';
+end one;

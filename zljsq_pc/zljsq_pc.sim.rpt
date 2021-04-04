@@ -1,0 +1,362 @@
+Simulator report for zljsq_pc
+Tue Jan 09 23:25:36 2018
+Quartus II Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 120.0 ns     ;
+; Simulation Netlist Size     ; 119 nodes    ;
+; Simulation Coverage         ;      26.19 % ;
+; Total Number of Transitions ; 208          ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone      ;
++-----------------------------+--------------+
+
+
++---------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                        ;
++--------------------------------------------------------------------------------------------+--------------+---------------+
+; Option                                                                                     ; Setting      ; Default Value ;
++--------------------------------------------------------------------------------------------+--------------+---------------+
+; Simulation mode                                                                            ; Functional   ; Timing        ;
+; Start time                                                                                 ; 0 ns         ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF         ;               ;
+; Vector input source                                                                        ; zljsq_pc.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On           ; On            ;
+; Check outputs                                                                              ; Off          ; Off           ;
+; Report simulation coverage                                                                 ; On           ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On           ; On            ;
+; Display missing 1-value coverage report                                                    ; On           ; On            ;
+; Display missing 0-value coverage report                                                    ; On           ; On            ;
+; Detect setup and hold time violations                                                      ; Off          ; Off           ;
+; Detect glitches                                                                            ; Off          ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off          ; Off           ;
+; Generate Signal Activity File                                                              ; Off          ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off          ; Off           ;
+; Group bus channels in simulation results                                                   ; Off          ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On           ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE   ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off          ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off          ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto         ; Auto          ;
++--------------------------------------------------------------------------------------------+--------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      26.19 % ;
+; Total nodes checked                                 ; 119          ;
+; Total output ports checked                          ; 126          ;
+; Total output ports with complete 1/0-value coverage ; 33           ;
+; Total output ports with no 1/0-value coverage       ; 75           ;
+; Total output ports with no 1-value coverage         ; 75           ;
+; Total output ports with no 0-value coverage         ; 93           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                                                           ;
++-------------------------------------------------------------------------------+------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                     ; Output Port Name                                                                   ; Output Port Type ;
++-------------------------------------------------------------------------------+------------------------------------------------------------------------------------+------------------+
+; |zljsq_pc|process_0~0                                                         ; |zljsq_pc|process_0~0                                                              ; out0             ;
+; |zljsq_pc|process_0~1                                                         ; |zljsq_pc|process_0~1                                                              ; out0             ;
+; |zljsq_pc|count~5                                                             ; |zljsq_pc|count~5                                                                  ; out              ;
+; |zljsq_pc|count~6                                                             ; |zljsq_pc|count~6                                                                  ; out              ;
+; |zljsq_pc|count~7                                                             ; |zljsq_pc|count~7                                                                  ; out              ;
+; |zljsq_pc|count~13                                                            ; |zljsq_pc|count~13                                                                 ; out              ;
+; |zljsq_pc|count~14                                                            ; |zljsq_pc|count~14                                                                 ; out              ;
+; |zljsq_pc|count~15                                                            ; |zljsq_pc|count~15                                                                 ; out              ;
+; |zljsq_pc|count[0]                                                            ; |zljsq_pc|count[0]                                                                 ; regout           ;
+; |zljsq_pc|count[1]                                                            ; |zljsq_pc|count[1]                                                                 ; regout           ;
+; |zljsq_pc|LD                                                                  ; |zljsq_pc|LD                                                                       ; out              ;
+; |zljsq_pc|IN_PC                                                               ; |zljsq_pc|IN_PC                                                                    ; out              ;
+; |zljsq_pc|CLK                                                                 ; |zljsq_pc|CLK                                                                      ; out              ;
+; |zljsq_pc|o[0]                                                                ; |zljsq_pc|o[0]                                                                     ; pin_out          ;
+; |zljsq_pc|o[1]                                                                ; |zljsq_pc|o[1]                                                                     ; pin_out          ;
+; |zljsq_pc|lpm_add_sub:Add0|result_node[0]                                     ; |zljsq_pc|lpm_add_sub:Add0|result_node[0]                                          ; out0             ;
+; |zljsq_pc|lpm_add_sub:Add0|result_node[1]                                     ; |zljsq_pc|lpm_add_sub:Add0|result_node[1]                                          ; out0             ;
+; |zljsq_pc|lpm_add_sub:Add0|result_node[2]                                     ; |zljsq_pc|lpm_add_sub:Add0|result_node[2]                                          ; out0             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|unreg_res_node[0]~0                  ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|unreg_res_node[0]~0                       ; out0             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|unreg_res_node[0]                    ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|unreg_res_node[0]                         ; out0             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~0                                  ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~0                                       ; out0             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~3                                  ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~3                                       ; out0             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|unreg_res_node[1]~7                  ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|unreg_res_node[1]~7                       ; out0             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|unreg_res_node[2]                    ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|unreg_res_node[2]                         ; out0             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|unreg_res_node[1]                    ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|unreg_res_node[1]                         ; out0             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~17                                 ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~17                                      ; out0             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~24                                 ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~24                                      ; out0             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~31                                 ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~31                                      ; out0             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[2] ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[2]      ; sout             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[1] ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[1]~COUT ; cout             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[1] ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[1]      ; sout             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[0] ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[0]~COUT ; cout             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[0] ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[0]      ; sout             ;
++-------------------------------------------------------------------------------+------------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                                                                                              ;
++-------------------------------------------------------------------------------+------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                     ; Output Port Name                                                                   ; Output Port Type ;
++-------------------------------------------------------------------------------+------------------------------------------------------------------------------------+------------------+
+; |zljsq_pc|count~2                                                             ; |zljsq_pc|count~2                                                                  ; out              ;
+; |zljsq_pc|count~3                                                             ; |zljsq_pc|count~3                                                                  ; out              ;
+; |zljsq_pc|count~4                                                             ; |zljsq_pc|count~4                                                                  ; out              ;
+; |zljsq_pc|count~10                                                            ; |zljsq_pc|count~10                                                                 ; out              ;
+; |zljsq_pc|count~11                                                            ; |zljsq_pc|count~11                                                                 ; out              ;
+; |zljsq_pc|count~12                                                            ; |zljsq_pc|count~12                                                                 ; out              ;
+; |zljsq_pc|count[2]                                                            ; |zljsq_pc|count[2]                                                                 ; regout           ;
+; |zljsq_pc|count[3]                                                            ; |zljsq_pc|count[3]                                                                 ; regout           ;
+; |zljsq_pc|count[4]                                                            ; |zljsq_pc|count[4]                                                                 ; regout           ;
+; |zljsq_pc|count[5]                                                            ; |zljsq_pc|count[5]                                                                 ; regout           ;
+; |zljsq_pc|i[0]                                                                ; |zljsq_pc|i[0]                                                                     ; out              ;
+; |zljsq_pc|i[1]                                                                ; |zljsq_pc|i[1]                                                                     ; out              ;
+; |zljsq_pc|i[2]                                                                ; |zljsq_pc|i[2]                                                                     ; out              ;
+; |zljsq_pc|i[3]                                                                ; |zljsq_pc|i[3]                                                                     ; out              ;
+; |zljsq_pc|i[4]                                                                ; |zljsq_pc|i[4]                                                                     ; out              ;
+; |zljsq_pc|i[5]                                                                ; |zljsq_pc|i[5]                                                                     ; out              ;
+; |zljsq_pc|i[6]                                                                ; |zljsq_pc|i[6]                                                                     ; out              ;
+; |zljsq_pc|i[7]                                                                ; |zljsq_pc|i[7]                                                                     ; out              ;
+; |zljsq_pc|o[2]                                                                ; |zljsq_pc|o[2]                                                                     ; pin_out          ;
+; |zljsq_pc|o[3]                                                                ; |zljsq_pc|o[3]                                                                     ; pin_out          ;
+; |zljsq_pc|o[4]                                                                ; |zljsq_pc|o[4]                                                                     ; pin_out          ;
+; |zljsq_pc|o[5]                                                                ; |zljsq_pc|o[5]                                                                     ; pin_out          ;
+; |zljsq_pc|lpm_add_sub:Add0|result_node[3]                                     ; |zljsq_pc|lpm_add_sub:Add0|result_node[3]                                          ; out0             ;
+; |zljsq_pc|lpm_add_sub:Add0|result_node[4]                                     ; |zljsq_pc|lpm_add_sub:Add0|result_node[4]                                          ; out0             ;
+; |zljsq_pc|lpm_add_sub:Add0|result_node[5]                                     ; |zljsq_pc|lpm_add_sub:Add0|result_node[5]                                          ; out0             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|datab_node[0]~0                      ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|datab_node[0]~0                           ; out0             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|datab_node[0]                        ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|datab_node[0]                             ; out0             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~1                                  ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~1                                       ; out0             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~2                                  ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~2                                       ; out0             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|datab_node[7]~1                      ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|datab_node[7]~1                           ; out0             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|datab_node[7]                        ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|datab_node[7]                             ; out0             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|datab_node[6]                        ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|datab_node[6]                             ; out0             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|datab_node[5]                        ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|datab_node[5]                             ; out0             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|datab_node[4]                        ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|datab_node[4]                             ; out0             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|datab_node[3]                        ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|datab_node[3]                             ; out0             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|datab_node[2]                        ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|datab_node[2]                             ; out0             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|datab_node[1]                        ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|datab_node[1]                             ; out0             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|unreg_res_node[5]~3                  ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|unreg_res_node[5]~3                       ; out0             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|unreg_res_node[4]~4                  ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|unreg_res_node[4]~4                       ; out0             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|unreg_res_node[3]~5                  ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|unreg_res_node[3]~5                       ; out0             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|unreg_res_node[2]~6                  ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|unreg_res_node[2]~6                       ; out0             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|unreg_res_node[5]                    ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|unreg_res_node[5]                         ; out0             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|unreg_res_node[4]                    ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|unreg_res_node[4]                         ; out0             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|unreg_res_node[3]                    ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|unreg_res_node[3]                         ; out0             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~4                                  ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~4                                       ; out0             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~5                                  ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~5                                       ; out0             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~6                                  ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~6                                       ; out0             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~7                                  ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~7                                       ; out0             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~8                                  ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~8                                       ; out0             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~9                                  ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~9                                       ; out0             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~10                                 ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~10                                      ; out0             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~13                                 ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~13                                      ; out0             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~14                                 ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~14                                      ; out0             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~15                                 ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~15                                      ; out0             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~16                                 ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~16                                      ; out0             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~18                                 ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~18                                      ; out0             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~19                                 ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~19                                      ; out0             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~20                                 ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~20                                      ; out0             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~21                                 ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~21                                      ; out0             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~22                                 ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~22                                      ; out0             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~23                                 ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~23                                      ; out0             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~25                                 ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~25                                      ; out0             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~26                                 ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~26                                      ; out0             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~27                                 ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~27                                      ; out0             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~28                                 ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~28                                      ; out0             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~29                                 ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~29                                      ; out0             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~30                                 ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~30                                      ; out0             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[6] ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[6]~COUT ; cout             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[5] ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[5]~COUT ; cout             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[5] ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[5]      ; sout             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[4] ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[4]~COUT ; cout             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[4] ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[4]      ; sout             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[3] ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[3]~COUT ; cout             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[3] ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[3]      ; sout             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[2] ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[2]~COUT ; cout             ;
++-------------------------------------------------------------------------------+------------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                                                                                              ;
++-------------------------------------------------------------------------------+------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                     ; Output Port Name                                                                   ; Output Port Type ;
++-------------------------------------------------------------------------------+------------------------------------------------------------------------------------+------------------+
+; |zljsq_pc|count~0                                                             ; |zljsq_pc|count~0                                                                  ; out              ;
+; |zljsq_pc|count~1                                                             ; |zljsq_pc|count~1                                                                  ; out              ;
+; |zljsq_pc|count~2                                                             ; |zljsq_pc|count~2                                                                  ; out              ;
+; |zljsq_pc|count~3                                                             ; |zljsq_pc|count~3                                                                  ; out              ;
+; |zljsq_pc|count~4                                                             ; |zljsq_pc|count~4                                                                  ; out              ;
+; |zljsq_pc|count~8                                                             ; |zljsq_pc|count~8                                                                  ; out              ;
+; |zljsq_pc|count~9                                                             ; |zljsq_pc|count~9                                                                  ; out              ;
+; |zljsq_pc|count~10                                                            ; |zljsq_pc|count~10                                                                 ; out              ;
+; |zljsq_pc|count~11                                                            ; |zljsq_pc|count~11                                                                 ; out              ;
+; |zljsq_pc|count~12                                                            ; |zljsq_pc|count~12                                                                 ; out              ;
+; |zljsq_pc|count[2]                                                            ; |zljsq_pc|count[2]                                                                 ; regout           ;
+; |zljsq_pc|count[3]                                                            ; |zljsq_pc|count[3]                                                                 ; regout           ;
+; |zljsq_pc|count[4]                                                            ; |zljsq_pc|count[4]                                                                 ; regout           ;
+; |zljsq_pc|count[5]                                                            ; |zljsq_pc|count[5]                                                                 ; regout           ;
+; |zljsq_pc|count[6]                                                            ; |zljsq_pc|count[6]                                                                 ; regout           ;
+; |zljsq_pc|count[7]                                                            ; |zljsq_pc|count[7]                                                                 ; regout           ;
+; |zljsq_pc|i[0]                                                                ; |zljsq_pc|i[0]                                                                     ; out              ;
+; |zljsq_pc|i[1]                                                                ; |zljsq_pc|i[1]                                                                     ; out              ;
+; |zljsq_pc|i[2]                                                                ; |zljsq_pc|i[2]                                                                     ; out              ;
+; |zljsq_pc|i[3]                                                                ; |zljsq_pc|i[3]                                                                     ; out              ;
+; |zljsq_pc|i[4]                                                                ; |zljsq_pc|i[4]                                                                     ; out              ;
+; |zljsq_pc|i[5]                                                                ; |zljsq_pc|i[5]                                                                     ; out              ;
+; |zljsq_pc|i[6]                                                                ; |zljsq_pc|i[6]                                                                     ; out              ;
+; |zljsq_pc|i[7]                                                                ; |zljsq_pc|i[7]                                                                     ; out              ;
+; |zljsq_pc|o[2]                                                                ; |zljsq_pc|o[2]                                                                     ; pin_out          ;
+; |zljsq_pc|o[3]                                                                ; |zljsq_pc|o[3]                                                                     ; pin_out          ;
+; |zljsq_pc|o[4]                                                                ; |zljsq_pc|o[4]                                                                     ; pin_out          ;
+; |zljsq_pc|o[5]                                                                ; |zljsq_pc|o[5]                                                                     ; pin_out          ;
+; |zljsq_pc|o[6]                                                                ; |zljsq_pc|o[6]                                                                     ; pin_out          ;
+; |zljsq_pc|o[7]                                                                ; |zljsq_pc|o[7]                                                                     ; pin_out          ;
+; |zljsq_pc|lpm_add_sub:Add0|result_node[3]                                     ; |zljsq_pc|lpm_add_sub:Add0|result_node[3]                                          ; out0             ;
+; |zljsq_pc|lpm_add_sub:Add0|result_node[4]                                     ; |zljsq_pc|lpm_add_sub:Add0|result_node[4]                                          ; out0             ;
+; |zljsq_pc|lpm_add_sub:Add0|result_node[5]                                     ; |zljsq_pc|lpm_add_sub:Add0|result_node[5]                                          ; out0             ;
+; |zljsq_pc|lpm_add_sub:Add0|result_node[6]                                     ; |zljsq_pc|lpm_add_sub:Add0|result_node[6]                                          ; out0             ;
+; |zljsq_pc|lpm_add_sub:Add0|result_node[7]                                     ; |zljsq_pc|lpm_add_sub:Add0|result_node[7]                                          ; out0             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|datab_node[0]~0                      ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|datab_node[0]~0                           ; out0             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|datab_node[0]                        ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|datab_node[0]                             ; out0             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~1                                  ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~1                                       ; out0             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~2                                  ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~2                                       ; out0             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|datab_node[7]~1                      ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|datab_node[7]~1                           ; out0             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|datab_node[7]                        ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|datab_node[7]                             ; out0             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|datab_node[6]                        ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|datab_node[6]                             ; out0             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|datab_node[5]                        ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|datab_node[5]                             ; out0             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|datab_node[4]                        ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|datab_node[4]                             ; out0             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|datab_node[3]                        ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|datab_node[3]                             ; out0             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|datab_node[2]                        ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|datab_node[2]                             ; out0             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|datab_node[1]                        ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|datab_node[1]                             ; out0             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|unreg_res_node[7]~1                  ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|unreg_res_node[7]~1                       ; out0             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|unreg_res_node[6]~2                  ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|unreg_res_node[6]~2                       ; out0             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|unreg_res_node[5]~3                  ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|unreg_res_node[5]~3                       ; out0             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|unreg_res_node[4]~4                  ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|unreg_res_node[4]~4                       ; out0             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|unreg_res_node[3]~5                  ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|unreg_res_node[3]~5                       ; out0             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|unreg_res_node[2]~6                  ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|unreg_res_node[2]~6                       ; out0             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|unreg_res_node[7]                    ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|unreg_res_node[7]                         ; out0             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|unreg_res_node[6]                    ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|unreg_res_node[6]                         ; out0             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|unreg_res_node[5]                    ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|unreg_res_node[5]                         ; out0             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|unreg_res_node[4]                    ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|unreg_res_node[4]                         ; out0             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|unreg_res_node[3]                    ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|unreg_res_node[3]                         ; out0             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~4                                  ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~4                                       ; out0             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~5                                  ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~5                                       ; out0             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~6                                  ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~6                                       ; out0             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~7                                  ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~7                                       ; out0             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~8                                  ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~8                                       ; out0             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~9                                  ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~9                                       ; out0             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~10                                 ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~10                                      ; out0             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~11                                 ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~11                                      ; out0             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~12                                 ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~12                                      ; out0             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~13                                 ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~13                                      ; out0             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~14                                 ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~14                                      ; out0             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~15                                 ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~15                                      ; out0             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~16                                 ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~16                                      ; out0             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~18                                 ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~18                                      ; out0             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~19                                 ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~19                                      ; out0             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~20                                 ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~20                                      ; out0             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~21                                 ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~21                                      ; out0             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~22                                 ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~22                                      ; out0             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~23                                 ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~23                                      ; out0             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~25                                 ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~25                                      ; out0             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~26                                 ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~26                                      ; out0             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~27                                 ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~27                                      ; out0             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~28                                 ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~28                                      ; out0             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~29                                 ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~29                                      ; out0             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~30                                 ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|_~30                                      ; out0             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[7] ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[7]      ; sout             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[6] ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[6]~COUT ; cout             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[6] ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[6]      ; sout             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[5] ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[5]~COUT ; cout             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[5] ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[5]      ; sout             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[4] ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[4]~COUT ; cout             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[4] ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[4]      ; sout             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[3] ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[3]~COUT ; cout             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[3] ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[3]      ; sout             ;
+; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[2] ; |zljsq_pc|lpm_add_sub:Add0|addcore:adder|a_csnbuffer:result_node|cs_buffer[2]~COUT ; cout             ;
++-------------------------------------------------------------------------------+------------------------------------------------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+    Info: Processing started: Tue Jan 09 23:25:36 2018
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off zljsq_pc -c zljsq_pc
+Info: Using vector source file "D:/Program Files/qurtus2/quartus/CPU_jianyanpro/zljsq_pc/zljsq_pc.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      26.19 %
+Info: Number of transitions in simulation is 208
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 175 megabytes
+    Info: Processing ended: Tue Jan 09 23:25:36 2018
+    Info: Elapsed time: 00:00:00
+    Info: Total CPU time (on all processors): 00:00:00
+
+

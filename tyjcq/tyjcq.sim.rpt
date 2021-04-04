@@ -1,0 +1,453 @@
+Simulator report for tyjcq
+Tue Jan 09 23:01:14 2018
+Quartus II Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 10.0 ns      ;
+; Simulation Netlist Size     ; 163 nodes    ;
+; Simulation Coverage         ;       0.61 % ;
+; Total Number of Transitions ; 35           ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone      ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Functional ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off        ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;       0.61 % ;
+; Total nodes checked                                 ; 163          ;
+; Total output ports checked                          ; 163          ;
+; Total output ports with complete 1/0-value coverage ; 1            ;
+; Total output ports with no 1/0-value coverage       ; 130          ;
+; Total output ports with no 1-value coverage         ; 140          ;
+; Total output ports with no 0-value coverage         ; 152          ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++--------------------------------------------------+
+; Complete 1/0-Value Coverage                      ;
++------------+------------------+------------------+
+; Node Name  ; Output Port Name ; Output Port Type ;
++------------+------------------+------------------+
+; |tyjcq|CLK ; |tyjcq|CLK       ; out              ;
++------------+------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++-------------------------------------------------------+
+; Missing 1-Value Coverage                              ;
++-----------------+------------------+------------------+
+; Node Name       ; Output Port Name ; Output Port Type ;
++-----------------+------------------+------------------+
+; |tyjcq|C[0]     ; |tyjcq|C[0]      ; regout           ;
+; |tyjcq|AO~0     ; |tyjcq|AO~0      ; out              ;
+; |tyjcq|AO~1     ; |tyjcq|AO~1      ; out              ;
+; |tyjcq|AO~2     ; |tyjcq|AO~2      ; out              ;
+; |tyjcq|AO~3     ; |tyjcq|AO~3      ; out              ;
+; |tyjcq|AO~4     ; |tyjcq|AO~4      ; out              ;
+; |tyjcq|AO~5     ; |tyjcq|AO~5      ; out              ;
+; |tyjcq|AO~6     ; |tyjcq|AO~6      ; out              ;
+; |tyjcq|AO~7     ; |tyjcq|AO~7      ; out              ;
+; |tyjcq|AO~8     ; |tyjcq|AO~8      ; out              ;
+; |tyjcq|AO~9     ; |tyjcq|AO~9      ; out              ;
+; |tyjcq|AO~10    ; |tyjcq|AO~10     ; out              ;
+; |tyjcq|AO~11    ; |tyjcq|AO~11     ; out              ;
+; |tyjcq|AO~12    ; |tyjcq|AO~12     ; out              ;
+; |tyjcq|AO~13    ; |tyjcq|AO~13     ; out              ;
+; |tyjcq|AO~14    ; |tyjcq|AO~14     ; out              ;
+; |tyjcq|AO~15    ; |tyjcq|AO~15     ; out              ;
+; |tyjcq|BO~0     ; |tyjcq|BO~0      ; out              ;
+; |tyjcq|BO~1     ; |tyjcq|BO~1      ; out              ;
+; |tyjcq|BO~2     ; |tyjcq|BO~2      ; out              ;
+; |tyjcq|BO~6     ; |tyjcq|BO~6      ; out              ;
+; |tyjcq|BO~7     ; |tyjcq|BO~7      ; out              ;
+; |tyjcq|BO~8     ; |tyjcq|BO~8      ; out              ;
+; |tyjcq|BO~9     ; |tyjcq|BO~9      ; out              ;
+; |tyjcq|BO~10    ; |tyjcq|BO~10     ; out              ;
+; |tyjcq|BO~14    ; |tyjcq|BO~14     ; out              ;
+; |tyjcq|BO~15    ; |tyjcq|BO~15     ; out              ;
+; |tyjcq|A~0      ; |tyjcq|A~0       ; out              ;
+; |tyjcq|A~1      ; |tyjcq|A~1       ; out              ;
+; |tyjcq|A~2      ; |tyjcq|A~2       ; out              ;
+; |tyjcq|A~3      ; |tyjcq|A~3       ; out              ;
+; |tyjcq|A~4      ; |tyjcq|A~4       ; out              ;
+; |tyjcq|A~5      ; |tyjcq|A~5       ; out              ;
+; |tyjcq|A~6      ; |tyjcq|A~6       ; out              ;
+; |tyjcq|A~7      ; |tyjcq|A~7       ; out              ;
+; |tyjcq|B~1      ; |tyjcq|B~1       ; out              ;
+; |tyjcq|B~2      ; |tyjcq|B~2       ; out              ;
+; |tyjcq|B~3      ; |tyjcq|B~3       ; out              ;
+; |tyjcq|B~4      ; |tyjcq|B~4       ; out              ;
+; |tyjcq|B~5      ; |tyjcq|B~5       ; out              ;
+; |tyjcq|B~6      ; |tyjcq|B~6       ; out              ;
+; |tyjcq|B~9      ; |tyjcq|B~9       ; out              ;
+; |tyjcq|B~10     ; |tyjcq|B~10      ; out              ;
+; |tyjcq|B~11     ; |tyjcq|B~11      ; out              ;
+; |tyjcq|B~12     ; |tyjcq|B~12      ; out              ;
+; |tyjcq|B~13     ; |tyjcq|B~13      ; out              ;
+; |tyjcq|B~14     ; |tyjcq|B~14      ; out              ;
+; |tyjcq|C~0      ; |tyjcq|C~0       ; out              ;
+; |tyjcq|C~1      ; |tyjcq|C~1       ; out              ;
+; |tyjcq|C~2      ; |tyjcq|C~2       ; out              ;
+; |tyjcq|C~3      ; |tyjcq|C~3       ; out              ;
+; |tyjcq|C~4      ; |tyjcq|C~4       ; out              ;
+; |tyjcq|C~5      ; |tyjcq|C~5       ; out              ;
+; |tyjcq|C~6      ; |tyjcq|C~6       ; out              ;
+; |tyjcq|C~7      ; |tyjcq|C~7       ; out              ;
+; |tyjcq|C~8      ; |tyjcq|C~8       ; out              ;
+; |tyjcq|C~9      ; |tyjcq|C~9       ; out              ;
+; |tyjcq|C~10     ; |tyjcq|C~10      ; out              ;
+; |tyjcq|C~11     ; |tyjcq|C~11      ; out              ;
+; |tyjcq|C~12     ; |tyjcq|C~12      ; out              ;
+; |tyjcq|C~13     ; |tyjcq|C~13      ; out              ;
+; |tyjcq|C~14     ; |tyjcq|C~14      ; out              ;
+; |tyjcq|C~15     ; |tyjcq|C~15      ; out              ;
+; |tyjcq|C~16     ; |tyjcq|C~16      ; out              ;
+; |tyjcq|C~17     ; |tyjcq|C~17      ; out              ;
+; |tyjcq|C~18     ; |tyjcq|C~18      ; out              ;
+; |tyjcq|C~19     ; |tyjcq|C~19      ; out              ;
+; |tyjcq|C~20     ; |tyjcq|C~20      ; out              ;
+; |tyjcq|C~21     ; |tyjcq|C~21      ; out              ;
+; |tyjcq|C~22     ; |tyjcq|C~22      ; out              ;
+; |tyjcq|C~23     ; |tyjcq|C~23      ; out              ;
+; |tyjcq|C[1]     ; |tyjcq|C[1]      ; regout           ;
+; |tyjcq|C[2]     ; |tyjcq|C[2]      ; regout           ;
+; |tyjcq|C[3]     ; |tyjcq|C[3]      ; regout           ;
+; |tyjcq|C[4]     ; |tyjcq|C[4]      ; regout           ;
+; |tyjcq|C[5]     ; |tyjcq|C[5]      ; regout           ;
+; |tyjcq|C[6]     ; |tyjcq|C[6]      ; regout           ;
+; |tyjcq|C[7]     ; |tyjcq|C[7]      ; regout           ;
+; |tyjcq|B[0]     ; |tyjcq|B[0]      ; regout           ;
+; |tyjcq|B[1]     ; |tyjcq|B[1]      ; regout           ;
+; |tyjcq|B[5]     ; |tyjcq|B[5]      ; regout           ;
+; |tyjcq|B[6]     ; |tyjcq|B[6]      ; regout           ;
+; |tyjcq|B[7]     ; |tyjcq|B[7]      ; regout           ;
+; |tyjcq|A[0]     ; |tyjcq|A[0]      ; regout           ;
+; |tyjcq|A[1]     ; |tyjcq|A[1]      ; regout           ;
+; |tyjcq|A[2]     ; |tyjcq|A[2]      ; regout           ;
+; |tyjcq|A[3]     ; |tyjcq|A[3]      ; regout           ;
+; |tyjcq|A[4]     ; |tyjcq|A[4]      ; regout           ;
+; |tyjcq|A[5]     ; |tyjcq|A[5]      ; regout           ;
+; |tyjcq|A[6]     ; |tyjcq|A[6]      ; regout           ;
+; |tyjcq|A[7]     ; |tyjcq|A[7]      ; regout           ;
+; |tyjcq|WE       ; |tyjcq|WE        ; out              ;
+; |tyjcq|RA[0]    ; |tyjcq|RA[0]     ; out              ;
+; |tyjcq|RA[1]    ; |tyjcq|RA[1]     ; out              ;
+; |tyjcq|WA[0]    ; |tyjcq|WA[0]     ; out              ;
+; |tyjcq|WA[1]    ; |tyjcq|WA[1]     ; out              ;
+; |tyjcq|i[1]     ; |tyjcq|i[1]      ; out              ;
+; |tyjcq|i[2]     ; |tyjcq|i[2]      ; out              ;
+; |tyjcq|i[3]     ; |tyjcq|i[3]      ; out              ;
+; |tyjcq|i[4]     ; |tyjcq|i[4]      ; out              ;
+; |tyjcq|i[5]     ; |tyjcq|i[5]      ; out              ;
+; |tyjcq|i[6]     ; |tyjcq|i[6]      ; out              ;
+; |tyjcq|AO[0]    ; |tyjcq|AO[0]     ; pin_out          ;
+; |tyjcq|AO[1]    ; |tyjcq|AO[1]     ; pin_out          ;
+; |tyjcq|AO[2]    ; |tyjcq|AO[2]     ; pin_out          ;
+; |tyjcq|AO[3]    ; |tyjcq|AO[3]     ; pin_out          ;
+; |tyjcq|AO[4]    ; |tyjcq|AO[4]     ; pin_out          ;
+; |tyjcq|AO[5]    ; |tyjcq|AO[5]     ; pin_out          ;
+; |tyjcq|AO[6]    ; |tyjcq|AO[6]     ; pin_out          ;
+; |tyjcq|AO[7]    ; |tyjcq|AO[7]     ; pin_out          ;
+; |tyjcq|BO[0]    ; |tyjcq|BO[0]     ; pin_out          ;
+; |tyjcq|BO[1]    ; |tyjcq|BO[1]     ; pin_out          ;
+; |tyjcq|BO[5]    ; |tyjcq|BO[5]     ; pin_out          ;
+; |tyjcq|BO[6]    ; |tyjcq|BO[6]     ; pin_out          ;
+; |tyjcq|BO[7]    ; |tyjcq|BO[7]     ; pin_out          ;
+; |tyjcq|A_O[0]   ; |tyjcq|A_O[0]    ; pin_out          ;
+; |tyjcq|A_O[1]   ; |tyjcq|A_O[1]    ; pin_out          ;
+; |tyjcq|A_O[2]   ; |tyjcq|A_O[2]    ; pin_out          ;
+; |tyjcq|A_O[3]   ; |tyjcq|A_O[3]    ; pin_out          ;
+; |tyjcq|A_O[4]   ; |tyjcq|A_O[4]    ; pin_out          ;
+; |tyjcq|A_O[5]   ; |tyjcq|A_O[5]    ; pin_out          ;
+; |tyjcq|A_O[6]   ; |tyjcq|A_O[6]    ; pin_out          ;
+; |tyjcq|A_O[7]   ; |tyjcq|A_O[7]    ; pin_out          ;
+; |tyjcq|B_O[0]   ; |tyjcq|B_O[0]    ; pin_out          ;
+; |tyjcq|B_O[1]   ; |tyjcq|B_O[1]    ; pin_out          ;
+; |tyjcq|B_O[5]   ; |tyjcq|B_O[5]    ; pin_out          ;
+; |tyjcq|B_O[6]   ; |tyjcq|B_O[6]    ; pin_out          ;
+; |tyjcq|B_O[7]   ; |tyjcq|B_O[7]    ; pin_out          ;
+; |tyjcq|C_O[0]   ; |tyjcq|C_O[0]    ; pin_out          ;
+; |tyjcq|C_O[1]   ; |tyjcq|C_O[1]    ; pin_out          ;
+; |tyjcq|C_O[2]   ; |tyjcq|C_O[2]    ; pin_out          ;
+; |tyjcq|C_O[3]   ; |tyjcq|C_O[3]    ; pin_out          ;
+; |tyjcq|C_O[4]   ; |tyjcq|C_O[4]    ; pin_out          ;
+; |tyjcq|C_O[5]   ; |tyjcq|C_O[5]    ; pin_out          ;
+; |tyjcq|C_O[6]   ; |tyjcq|C_O[6]    ; pin_out          ;
+; |tyjcq|C_O[7]   ; |tyjcq|C_O[7]    ; pin_out          ;
+; |tyjcq|Equal1~0 ; |tyjcq|Equal1~0  ; out0             ;
+; |tyjcq|Equal2~0 ; |tyjcq|Equal2~0  ; out0             ;
+; |tyjcq|Equal3~0 ; |tyjcq|Equal3~0  ; out0             ;
+; |tyjcq|Equal4~0 ; |tyjcq|Equal4~0  ; out0             ;
++-----------------+------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++-------------------------------------------------------+
+; Missing 0-Value Coverage                              ;
++-----------------+------------------+------------------+
+; Node Name       ; Output Port Name ; Output Port Type ;
++-----------------+------------------+------------------+
+; |tyjcq|C[0]     ; |tyjcq|C[0]      ; regout           ;
+; |tyjcq|AO~0     ; |tyjcq|AO~0      ; out              ;
+; |tyjcq|AO~1     ; |tyjcq|AO~1      ; out              ;
+; |tyjcq|AO~2     ; |tyjcq|AO~2      ; out              ;
+; |tyjcq|AO~3     ; |tyjcq|AO~3      ; out              ;
+; |tyjcq|AO~4     ; |tyjcq|AO~4      ; out              ;
+; |tyjcq|AO~5     ; |tyjcq|AO~5      ; out              ;
+; |tyjcq|AO~6     ; |tyjcq|AO~6      ; out              ;
+; |tyjcq|AO~7     ; |tyjcq|AO~7      ; out              ;
+; |tyjcq|AO~9     ; |tyjcq|AO~9      ; out              ;
+; |tyjcq|AO~11    ; |tyjcq|AO~11     ; out              ;
+; |tyjcq|AO~13    ; |tyjcq|AO~13     ; out              ;
+; |tyjcq|AO~15    ; |tyjcq|AO~15     ; out              ;
+; |tyjcq|BO~0     ; |tyjcq|BO~0      ; out              ;
+; |tyjcq|BO~1     ; |tyjcq|BO~1      ; out              ;
+; |tyjcq|BO~2     ; |tyjcq|BO~2      ; out              ;
+; |tyjcq|BO~3     ; |tyjcq|BO~3      ; out              ;
+; |tyjcq|BO~4     ; |tyjcq|BO~4      ; out              ;
+; |tyjcq|BO~5     ; |tyjcq|BO~5      ; out              ;
+; |tyjcq|BO~6     ; |tyjcq|BO~6      ; out              ;
+; |tyjcq|BO~7     ; |tyjcq|BO~7      ; out              ;
+; |tyjcq|BO~8     ; |tyjcq|BO~8      ; out              ;
+; |tyjcq|BO~9     ; |tyjcq|BO~9      ; out              ;
+; |tyjcq|BO~10    ; |tyjcq|BO~10     ; out              ;
+; |tyjcq|BO~11    ; |tyjcq|BO~11     ; out              ;
+; |tyjcq|BO~12    ; |tyjcq|BO~12     ; out              ;
+; |tyjcq|BO~13    ; |tyjcq|BO~13     ; out              ;
+; |tyjcq|BO~14    ; |tyjcq|BO~14     ; out              ;
+; |tyjcq|BO~15    ; |tyjcq|BO~15     ; out              ;
+; |tyjcq|A~0      ; |tyjcq|A~0       ; out              ;
+; |tyjcq|A~1      ; |tyjcq|A~1       ; out              ;
+; |tyjcq|A~2      ; |tyjcq|A~2       ; out              ;
+; |tyjcq|A~3      ; |tyjcq|A~3       ; out              ;
+; |tyjcq|A~4      ; |tyjcq|A~4       ; out              ;
+; |tyjcq|A~5      ; |tyjcq|A~5       ; out              ;
+; |tyjcq|A~6      ; |tyjcq|A~6       ; out              ;
+; |tyjcq|A~7      ; |tyjcq|A~7       ; out              ;
+; |tyjcq|B~0      ; |tyjcq|B~0       ; out              ;
+; |tyjcq|B~1      ; |tyjcq|B~1       ; out              ;
+; |tyjcq|B~2      ; |tyjcq|B~2       ; out              ;
+; |tyjcq|B~3      ; |tyjcq|B~3       ; out              ;
+; |tyjcq|B~4      ; |tyjcq|B~4       ; out              ;
+; |tyjcq|B~5      ; |tyjcq|B~5       ; out              ;
+; |tyjcq|B~6      ; |tyjcq|B~6       ; out              ;
+; |tyjcq|B~7      ; |tyjcq|B~7       ; out              ;
+; |tyjcq|B~8      ; |tyjcq|B~8       ; out              ;
+; |tyjcq|B~9      ; |tyjcq|B~9       ; out              ;
+; |tyjcq|B~10     ; |tyjcq|B~10      ; out              ;
+; |tyjcq|B~11     ; |tyjcq|B~11      ; out              ;
+; |tyjcq|B~12     ; |tyjcq|B~12      ; out              ;
+; |tyjcq|B~13     ; |tyjcq|B~13      ; out              ;
+; |tyjcq|B~14     ; |tyjcq|B~14      ; out              ;
+; |tyjcq|B~15     ; |tyjcq|B~15      ; out              ;
+; |tyjcq|C~0      ; |tyjcq|C~0       ; out              ;
+; |tyjcq|C~1      ; |tyjcq|C~1       ; out              ;
+; |tyjcq|C~2      ; |tyjcq|C~2       ; out              ;
+; |tyjcq|C~3      ; |tyjcq|C~3       ; out              ;
+; |tyjcq|C~4      ; |tyjcq|C~4       ; out              ;
+; |tyjcq|C~5      ; |tyjcq|C~5       ; out              ;
+; |tyjcq|C~6      ; |tyjcq|C~6       ; out              ;
+; |tyjcq|C~7      ; |tyjcq|C~7       ; out              ;
+; |tyjcq|C~8      ; |tyjcq|C~8       ; out              ;
+; |tyjcq|C~9      ; |tyjcq|C~9       ; out              ;
+; |tyjcq|C~10     ; |tyjcq|C~10      ; out              ;
+; |tyjcq|C~11     ; |tyjcq|C~11      ; out              ;
+; |tyjcq|C~12     ; |tyjcq|C~12      ; out              ;
+; |tyjcq|C~13     ; |tyjcq|C~13      ; out              ;
+; |tyjcq|C~14     ; |tyjcq|C~14      ; out              ;
+; |tyjcq|C~15     ; |tyjcq|C~15      ; out              ;
+; |tyjcq|C~16     ; |tyjcq|C~16      ; out              ;
+; |tyjcq|C~17     ; |tyjcq|C~17      ; out              ;
+; |tyjcq|C~18     ; |tyjcq|C~18      ; out              ;
+; |tyjcq|C~19     ; |tyjcq|C~19      ; out              ;
+; |tyjcq|C~20     ; |tyjcq|C~20      ; out              ;
+; |tyjcq|C~21     ; |tyjcq|C~21      ; out              ;
+; |tyjcq|C~22     ; |tyjcq|C~22      ; out              ;
+; |tyjcq|C~23     ; |tyjcq|C~23      ; out              ;
+; |tyjcq|C[1]     ; |tyjcq|C[1]      ; regout           ;
+; |tyjcq|C[2]     ; |tyjcq|C[2]      ; regout           ;
+; |tyjcq|C[3]     ; |tyjcq|C[3]      ; regout           ;
+; |tyjcq|C[4]     ; |tyjcq|C[4]      ; regout           ;
+; |tyjcq|C[5]     ; |tyjcq|C[5]      ; regout           ;
+; |tyjcq|C[6]     ; |tyjcq|C[6]      ; regout           ;
+; |tyjcq|C[7]     ; |tyjcq|C[7]      ; regout           ;
+; |tyjcq|B[0]     ; |tyjcq|B[0]      ; regout           ;
+; |tyjcq|B[1]     ; |tyjcq|B[1]      ; regout           ;
+; |tyjcq|B[2]     ; |tyjcq|B[2]      ; regout           ;
+; |tyjcq|B[3]     ; |tyjcq|B[3]      ; regout           ;
+; |tyjcq|B[4]     ; |tyjcq|B[4]      ; regout           ;
+; |tyjcq|B[5]     ; |tyjcq|B[5]      ; regout           ;
+; |tyjcq|B[6]     ; |tyjcq|B[6]      ; regout           ;
+; |tyjcq|B[7]     ; |tyjcq|B[7]      ; regout           ;
+; |tyjcq|A[0]     ; |tyjcq|A[0]      ; regout           ;
+; |tyjcq|A[1]     ; |tyjcq|A[1]      ; regout           ;
+; |tyjcq|A[2]     ; |tyjcq|A[2]      ; regout           ;
+; |tyjcq|A[3]     ; |tyjcq|A[3]      ; regout           ;
+; |tyjcq|A[4]     ; |tyjcq|A[4]      ; regout           ;
+; |tyjcq|A[5]     ; |tyjcq|A[5]      ; regout           ;
+; |tyjcq|A[6]     ; |tyjcq|A[6]      ; regout           ;
+; |tyjcq|A[7]     ; |tyjcq|A[7]      ; regout           ;
+; |tyjcq|RA[0]    ; |tyjcq|RA[0]     ; out              ;
+; |tyjcq|WA[0]    ; |tyjcq|WA[0]     ; out              ;
+; |tyjcq|WA[1]    ; |tyjcq|WA[1]     ; out              ;
+; |tyjcq|i[0]     ; |tyjcq|i[0]      ; out              ;
+; |tyjcq|i[1]     ; |tyjcq|i[1]      ; out              ;
+; |tyjcq|i[2]     ; |tyjcq|i[2]      ; out              ;
+; |tyjcq|i[3]     ; |tyjcq|i[3]      ; out              ;
+; |tyjcq|i[4]     ; |tyjcq|i[4]      ; out              ;
+; |tyjcq|i[5]     ; |tyjcq|i[5]      ; out              ;
+; |tyjcq|i[6]     ; |tyjcq|i[6]      ; out              ;
+; |tyjcq|i[7]     ; |tyjcq|i[7]      ; out              ;
+; |tyjcq|AO[0]    ; |tyjcq|AO[0]     ; pin_out          ;
+; |tyjcq|AO[2]    ; |tyjcq|AO[2]     ; pin_out          ;
+; |tyjcq|AO[4]    ; |tyjcq|AO[4]     ; pin_out          ;
+; |tyjcq|AO[6]    ; |tyjcq|AO[6]     ; pin_out          ;
+; |tyjcq|BO[0]    ; |tyjcq|BO[0]     ; pin_out          ;
+; |tyjcq|BO[1]    ; |tyjcq|BO[1]     ; pin_out          ;
+; |tyjcq|BO[2]    ; |tyjcq|BO[2]     ; pin_out          ;
+; |tyjcq|BO[3]    ; |tyjcq|BO[3]     ; pin_out          ;
+; |tyjcq|BO[4]    ; |tyjcq|BO[4]     ; pin_out          ;
+; |tyjcq|BO[5]    ; |tyjcq|BO[5]     ; pin_out          ;
+; |tyjcq|BO[6]    ; |tyjcq|BO[6]     ; pin_out          ;
+; |tyjcq|BO[7]    ; |tyjcq|BO[7]     ; pin_out          ;
+; |tyjcq|A_O[0]   ; |tyjcq|A_O[0]    ; pin_out          ;
+; |tyjcq|A_O[1]   ; |tyjcq|A_O[1]    ; pin_out          ;
+; |tyjcq|A_O[2]   ; |tyjcq|A_O[2]    ; pin_out          ;
+; |tyjcq|A_O[3]   ; |tyjcq|A_O[3]    ; pin_out          ;
+; |tyjcq|A_O[4]   ; |tyjcq|A_O[4]    ; pin_out          ;
+; |tyjcq|A_O[5]   ; |tyjcq|A_O[5]    ; pin_out          ;
+; |tyjcq|A_O[6]   ; |tyjcq|A_O[6]    ; pin_out          ;
+; |tyjcq|A_O[7]   ; |tyjcq|A_O[7]    ; pin_out          ;
+; |tyjcq|B_O[0]   ; |tyjcq|B_O[0]    ; pin_out          ;
+; |tyjcq|B_O[1]   ; |tyjcq|B_O[1]    ; pin_out          ;
+; |tyjcq|B_O[2]   ; |tyjcq|B_O[2]    ; pin_out          ;
+; |tyjcq|B_O[3]   ; |tyjcq|B_O[3]    ; pin_out          ;
+; |tyjcq|B_O[4]   ; |tyjcq|B_O[4]    ; pin_out          ;
+; |tyjcq|B_O[5]   ; |tyjcq|B_O[5]    ; pin_out          ;
+; |tyjcq|B_O[6]   ; |tyjcq|B_O[6]    ; pin_out          ;
+; |tyjcq|B_O[7]   ; |tyjcq|B_O[7]    ; pin_out          ;
+; |tyjcq|C_O[0]   ; |tyjcq|C_O[0]    ; pin_out          ;
+; |tyjcq|C_O[1]   ; |tyjcq|C_O[1]    ; pin_out          ;
+; |tyjcq|C_O[2]   ; |tyjcq|C_O[2]    ; pin_out          ;
+; |tyjcq|C_O[3]   ; |tyjcq|C_O[3]    ; pin_out          ;
+; |tyjcq|C_O[4]   ; |tyjcq|C_O[4]    ; pin_out          ;
+; |tyjcq|C_O[5]   ; |tyjcq|C_O[5]    ; pin_out          ;
+; |tyjcq|C_O[6]   ; |tyjcq|C_O[6]    ; pin_out          ;
+; |tyjcq|C_O[7]   ; |tyjcq|C_O[7]    ; pin_out          ;
+; |tyjcq|Equal0~0 ; |tyjcq|Equal0~0  ; out0             ;
+; |tyjcq|Equal1~0 ; |tyjcq|Equal1~0  ; out0             ;
+; |tyjcq|Equal2~0 ; |tyjcq|Equal2~0  ; out0             ;
+; |tyjcq|Equal3~0 ; |tyjcq|Equal3~0  ; out0             ;
+; |tyjcq|Equal4~0 ; |tyjcq|Equal4~0  ; out0             ;
++-----------------+------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+    Info: Processing started: Tue Jan 09 23:01:13 2018
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off tyjcq -c tyjcq
+Info: Using vector source file "D:/Program Files/qurtus2/quartus/CPU_jianyanpro/tyjcq/tyjcq.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is       0.61 %
+Info: Number of transitions in simulation is 35
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 175 megabytes
+    Info: Processing ended: Tue Jan 09 23:01:14 2018
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
+
+

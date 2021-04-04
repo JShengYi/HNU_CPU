@@ -1,0 +1,5 @@
+|s_m
+CLK => SM_0.CLK
+SM <= SM_0.DB_MAX_OUTPUT_PORT_TYPE
+
+

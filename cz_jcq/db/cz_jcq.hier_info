@@ -1,0 +1,11 @@
+|cz_jcq
+en => z_o~reg0.ENA
+en => c_o~reg0.ENA
+CLK => c_o~reg0.CLK
+CLK => z_o~reg0.CLK
+c_i => c_o~reg0.DATAIN
+z_i => z_o~reg0.DATAIN
+c_o <= c_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+z_o <= z_o~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

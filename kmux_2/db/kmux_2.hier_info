@@ -1,0 +1,35 @@
+|kmux_2
+s => o~7.OUTPUTSELECT
+s => o~6.OUTPUTSELECT
+s => o~5.OUTPUTSELECT
+s => o~4.OUTPUTSELECT
+s => o~3.OUTPUTSELECT
+s => o~2.OUTPUTSELECT
+s => o~1.OUTPUTSELECT
+s => o~0.OUTPUTSELECT
+i0[0] => o~7.DATAB
+i0[1] => o~6.DATAB
+i0[2] => o~5.DATAB
+i0[3] => o~4.DATAB
+i0[4] => o~3.DATAB
+i0[5] => o~2.DATAB
+i0[6] => o~1.DATAB
+i0[7] => o~0.DATAB
+i1[0] => o~7.DATAA
+i1[1] => o~6.DATAA
+i1[2] => o~5.DATAA
+i1[3] => o~4.DATAA
+i1[4] => o~3.DATAA
+i1[5] => o~2.DATAA
+i1[6] => o~1.DATAA
+i1[7] => o~0.DATAA
+o[0] <= o~7.DB_MAX_OUTPUT_PORT_TYPE
+o[1] <= o~6.DB_MAX_OUTPUT_PORT_TYPE
+o[2] <= o~5.DB_MAX_OUTPUT_PORT_TYPE
+o[3] <= o~4.DB_MAX_OUTPUT_PORT_TYPE
+o[4] <= o~3.DB_MAX_OUTPUT_PORT_TYPE
+o[5] <= o~2.DB_MAX_OUTPUT_PORT_TYPE
+o[6] <= o~1.DB_MAX_OUTPUT_PORT_TYPE
+o[7] <= o~0.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,12 @@
+Fitter Status : Successful - Fri Jan 05 19:36:12 2018
+Quartus II Version : 9.0 Build 184 04/29/2009 SP 1 SJ Web Edition
+Revision Name : tyjcq
+Top-level Entity Name : tyjcq
+Family : Cyclone
+Device : EP1C3T100A8
+Timing Models : Final
+Total logic elements : 52 / 2,910 ( 2 % )
+Total pins : 54 / 65 ( 83 % )
+Total virtual pins : 0
+Total memory bits : 0 / 59,904 ( 0 % )
+Total PLLs : 0 / 1 ( 0 % )

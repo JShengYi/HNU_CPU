@@ -1,0 +1,865 @@
+Simulator report for CPU_sakura
+Sun Jan 07 10:45:19 2018
+Quartus II Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. |CPU_sakura|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_38a1:auto_generated|ALTSYNCRAM
+  6. Coverage Summary
+  7. Complete 1/0-Value Coverage
+  8. Missing 1-Value Coverage
+  9. Missing 0-Value Coverage
+ 10. Simulator INI Usage
+ 11. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2009 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 400.0 ns     ;
+; Simulation Netlist Size     ; 643 nodes    ;
+; Simulation Coverage         ;      85.05 % ;
+; Total Number of Transitions ; 7975         ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Stratix II   ;
++-----------------------------+--------------+
+
+
++-----------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                          ;
++--------------------------------------------------------------------------------------------+----------------+---------------+
+; Option                                                                                     ; Setting        ; Default Value ;
++--------------------------------------------------------------------------------------------+----------------+---------------+
+; Simulation mode                                                                            ; Functional     ; Timing        ;
+; Start time                                                                                 ; 0 ns           ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF           ;               ;
+; Vector input source                                                                        ; CPU_sakura.vwf ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On             ; On            ;
+; Check outputs                                                                              ; Off            ; Off           ;
+; Report simulation coverage                                                                 ; On             ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On             ; On            ;
+; Display missing 1-value coverage report                                                    ; On             ; On            ;
+; Display missing 0-value coverage report                                                    ; On             ; On            ;
+; Detect setup and hold time violations                                                      ; Off            ; Off           ;
+; Detect glitches                                                                            ; Off            ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off            ; Off           ;
+; Generate Signal Activity File                                                              ; Off            ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off            ; Off           ;
+; Group bus channels in simulation results                                                   ; Off            ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On             ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE     ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off            ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; Off            ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto           ; Auto          ;
++--------------------------------------------------------------------------------------------+----------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------------------------------------------+
+; |CPU_sakura|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_38a1:auto_generated|ALTSYNCRAM ;
++--------------------------------------------------------------------------------------------------------+
+Memory report data cannot be output to ASCII.
+Please use Quartus II to view the memory report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      85.05 % ;
+; Total nodes checked                                 ; 643          ;
+; Total output ports checked                          ; 642          ;
+; Total output ports with complete 1/0-value coverage ; 546          ;
+; Total output ports with no 1/0-value coverage       ; 54           ;
+; Total output ports with no 1-value coverage         ; 80           ;
+; Total output ports with no 0-value coverage         ; 70           ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                                                                                                      ;
++----------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                                ; Output Port Name                                                                                   ; Output Port Type ;
++----------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------+------------------+
+; |CPU_sakura|BUS[7]                                                                                       ; |CPU_sakura|BUS[7]                                                                                 ; pin_out          ;
+; |CPU_sakura|BUS[6]                                                                                       ; |CPU_sakura|BUS[6]                                                                                 ; pin_out          ;
+; |CPU_sakura|BUS[5]                                                                                       ; |CPU_sakura|BUS[5]                                                                                 ; pin_out          ;
+; |CPU_sakura|BUS[4]                                                                                       ; |CPU_sakura|BUS[4]                                                                                 ; pin_out          ;
+; |CPU_sakura|BUS[3]                                                                                       ; |CPU_sakura|BUS[3]                                                                                 ; pin_out          ;
+; |CPU_sakura|BUS[2]                                                                                       ; |CPU_sakura|BUS[2]                                                                                 ; pin_out          ;
+; |CPU_sakura|BUS[1]                                                                                       ; |CPU_sakura|BUS[1]                                                                                 ; pin_out          ;
+; |CPU_sakura|BUS[0]                                                                                       ; |CPU_sakura|BUS[0]                                                                                 ; pin_out          ;
+; |CPU_sakura|gdfx_temp0[7]                                                                                ; |CPU_sakura|gdfx_temp0[7]                                                                          ; out0             ;
+; |CPU_sakura|gdfx_temp0[6]                                                                                ; |CPU_sakura|gdfx_temp0[6]                                                                          ; out0             ;
+; |CPU_sakura|gdfx_temp0[5]                                                                                ; |CPU_sakura|gdfx_temp0[5]                                                                          ; out0             ;
+; |CPU_sakura|gdfx_temp0[4]                                                                                ; |CPU_sakura|gdfx_temp0[4]                                                                          ; out0             ;
+; |CPU_sakura|gdfx_temp0[3]                                                                                ; |CPU_sakura|gdfx_temp0[3]                                                                          ; out0             ;
+; |CPU_sakura|gdfx_temp0[2]                                                                                ; |CPU_sakura|gdfx_temp0[2]                                                                          ; out0             ;
+; |CPU_sakura|gdfx_temp0[1]                                                                                ; |CPU_sakura|gdfx_temp0[1]                                                                          ; out0             ;
+; |CPU_sakura|gdfx_temp0[0]                                                                                ; |CPU_sakura|gdfx_temp0[0]                                                                          ; out0             ;
+; |CPU_sakura|CPU_CLK                                                                                      ; |CPU_sakura|CPU_CLK                                                                                ; out              ;
+; |CPU_sakura|OTHER_CLK                                                                                    ; |CPU_sakura|OTHER_CLK                                                                              ; out              ;
+; |CPU_sakura|inst12                                                                                       ; |CPU_sakura|inst12                                                                                 ; out0             ;
+; |CPU_sakura|JCQ_A[7]                                                                                     ; |CPU_sakura|JCQ_A[7]                                                                               ; pin_out          ;
+; |CPU_sakura|JCQ_A[6]                                                                                     ; |CPU_sakura|JCQ_A[6]                                                                               ; pin_out          ;
+; |CPU_sakura|JCQ_A[5]                                                                                     ; |CPU_sakura|JCQ_A[5]                                                                               ; pin_out          ;
+; |CPU_sakura|JCQ_A[4]                                                                                     ; |CPU_sakura|JCQ_A[4]                                                                               ; pin_out          ;
+; |CPU_sakura|JCQ_A[3]                                                                                     ; |CPU_sakura|JCQ_A[3]                                                                               ; pin_out          ;
+; |CPU_sakura|JCQ_A[2]                                                                                     ; |CPU_sakura|JCQ_A[2]                                                                               ; pin_out          ;
+; |CPU_sakura|JCQ_A[1]                                                                                     ; |CPU_sakura|JCQ_A[1]                                                                               ; pin_out          ;
+; |CPU_sakura|JCQ_A[0]                                                                                     ; |CPU_sakura|JCQ_A[0]                                                                               ; pin_out          ;
+; |CPU_sakura|JCQ_C[6]                                                                                     ; |CPU_sakura|JCQ_C[6]                                                                               ; pin_out          ;
+; |CPU_sakura|JCQ_C[4]                                                                                     ; |CPU_sakura|JCQ_C[4]                                                                               ; pin_out          ;
+; |CPU_sakura|PC_COUNT[7]                                                                                  ; |CPU_sakura|PC_COUNT[7]                                                                            ; pin_out          ;
+; |CPU_sakura|PC_COUNT[3]                                                                                  ; |CPU_sakura|PC_COUNT[3]                                                                            ; pin_out          ;
+; |CPU_sakura|PC_COUNT[2]                                                                                  ; |CPU_sakura|PC_COUNT[2]                                                                            ; pin_out          ;
+; |CPU_sakura|PC_COUNT[1]                                                                                  ; |CPU_sakura|PC_COUNT[1]                                                                            ; pin_out          ;
+; |CPU_sakura|PC_COUNT[0]                                                                                  ; |CPU_sakura|PC_COUNT[0]                                                                            ; pin_out          ;
+; |CPU_sakura|zljsq_pc:inst1|process_0~0                                                                   ; |CPU_sakura|zljsq_pc:inst1|process_0~0                                                             ; out0             ;
+; |CPU_sakura|zljsq_pc:inst1|process_0~1                                                                   ; |CPU_sakura|zljsq_pc:inst1|process_0~1                                                             ; out0             ;
+; |CPU_sakura|zljsq_pc:inst1|count~0                                                                       ; |CPU_sakura|zljsq_pc:inst1|count~0                                                                 ; out              ;
+; |CPU_sakura|zljsq_pc:inst1|count~4                                                                       ; |CPU_sakura|zljsq_pc:inst1|count~4                                                                 ; out              ;
+; |CPU_sakura|zljsq_pc:inst1|count~5                                                                       ; |CPU_sakura|zljsq_pc:inst1|count~5                                                                 ; out              ;
+; |CPU_sakura|zljsq_pc:inst1|count~6                                                                       ; |CPU_sakura|zljsq_pc:inst1|count~6                                                                 ; out              ;
+; |CPU_sakura|zljsq_pc:inst1|count~7                                                                       ; |CPU_sakura|zljsq_pc:inst1|count~7                                                                 ; out              ;
+; |CPU_sakura|zljsq_pc:inst1|count~8                                                                       ; |CPU_sakura|zljsq_pc:inst1|count~8                                                                 ; out              ;
+; |CPU_sakura|zljsq_pc:inst1|count~10                                                                      ; |CPU_sakura|zljsq_pc:inst1|count~10                                                                ; out              ;
+; |CPU_sakura|zljsq_pc:inst1|count~11                                                                      ; |CPU_sakura|zljsq_pc:inst1|count~11                                                                ; out              ;
+; |CPU_sakura|zljsq_pc:inst1|count~12                                                                      ; |CPU_sakura|zljsq_pc:inst1|count~12                                                                ; out              ;
+; |CPU_sakura|zljsq_pc:inst1|count~13                                                                      ; |CPU_sakura|zljsq_pc:inst1|count~13                                                                ; out              ;
+; |CPU_sakura|zljsq_pc:inst1|count~14                                                                      ; |CPU_sakura|zljsq_pc:inst1|count~14                                                                ; out              ;
+; |CPU_sakura|zljsq_pc:inst1|count~15                                                                      ; |CPU_sakura|zljsq_pc:inst1|count~15                                                                ; out              ;
+; |CPU_sakura|zljsq_pc:inst1|count[0]                                                                      ; |CPU_sakura|zljsq_pc:inst1|count[0]                                                                ; regout           ;
+; |CPU_sakura|zljsq_pc:inst1|count[1]                                                                      ; |CPU_sakura|zljsq_pc:inst1|count[1]                                                                ; regout           ;
+; |CPU_sakura|zljsq_pc:inst1|count[2]                                                                      ; |CPU_sakura|zljsq_pc:inst1|count[2]                                                                ; regout           ;
+; |CPU_sakura|zljsq_pc:inst1|count[3]                                                                      ; |CPU_sakura|zljsq_pc:inst1|count[3]                                                                ; regout           ;
+; |CPU_sakura|zljsq_pc:inst1|count[7]                                                                      ; |CPU_sakura|zljsq_pc:inst1|count[7]                                                                ; regout           ;
+; |CPU_sakura|xuanzeqi:inst2|o[7]~0                                                                        ; |CPU_sakura|xuanzeqi:inst2|o[7]~0                                                                  ; out              ;
+; |CPU_sakura|xuanzeqi:inst2|o[6]~1                                                                        ; |CPU_sakura|xuanzeqi:inst2|o[6]~1                                                                  ; out              ;
+; |CPU_sakura|xuanzeqi:inst2|o[5]~2                                                                        ; |CPU_sakura|xuanzeqi:inst2|o[5]~2                                                                  ; out              ;
+; |CPU_sakura|xuanzeqi:inst2|o[4]~3                                                                        ; |CPU_sakura|xuanzeqi:inst2|o[4]~3                                                                  ; out              ;
+; |CPU_sakura|xuanzeqi:inst2|o[3]~4                                                                        ; |CPU_sakura|xuanzeqi:inst2|o[3]~4                                                                  ; out              ;
+; |CPU_sakura|xuanzeqi:inst2|o[2]~5                                                                        ; |CPU_sakura|xuanzeqi:inst2|o[2]~5                                                                  ; out              ;
+; |CPU_sakura|xuanzeqi:inst2|o[1]~6                                                                        ; |CPU_sakura|xuanzeqi:inst2|o[1]~6                                                                  ; out              ;
+; |CPU_sakura|xuanzeqi:inst2|o[0]~7                                                                        ; |CPU_sakura|xuanzeqi:inst2|o[0]~7                                                                  ; out              ;
+; |CPU_sakura|xuanzeqi:inst2|o[0]~8                                                                        ; |CPU_sakura|xuanzeqi:inst2|o[0]~8                                                                  ; out              ;
+; |CPU_sakura|xuanzeqi:inst2|o[0]                                                                          ; |CPU_sakura|xuanzeqi:inst2|o[0]                                                                    ; out              ;
+; |CPU_sakura|xuanzeqi:inst2|o[1]~10                                                                       ; |CPU_sakura|xuanzeqi:inst2|o[1]~10                                                                 ; out              ;
+; |CPU_sakura|xuanzeqi:inst2|o[1]                                                                          ; |CPU_sakura|xuanzeqi:inst2|o[1]                                                                    ; out              ;
+; |CPU_sakura|xuanzeqi:inst2|o[2]~12                                                                       ; |CPU_sakura|xuanzeqi:inst2|o[2]~12                                                                 ; out              ;
+; |CPU_sakura|xuanzeqi:inst2|o[2]                                                                          ; |CPU_sakura|xuanzeqi:inst2|o[2]                                                                    ; out              ;
+; |CPU_sakura|xuanzeqi:inst2|o[3]~14                                                                       ; |CPU_sakura|xuanzeqi:inst2|o[3]~14                                                                 ; out              ;
+; |CPU_sakura|xuanzeqi:inst2|o[3]                                                                          ; |CPU_sakura|xuanzeqi:inst2|o[3]                                                                    ; out              ;
+; |CPU_sakura|xuanzeqi:inst2|o[4]~16                                                                       ; |CPU_sakura|xuanzeqi:inst2|o[4]~16                                                                 ; out              ;
+; |CPU_sakura|xuanzeqi:inst2|o[4]                                                                          ; |CPU_sakura|xuanzeqi:inst2|o[4]                                                                    ; out              ;
+; |CPU_sakura|xuanzeqi:inst2|o[5]~18                                                                       ; |CPU_sakura|xuanzeqi:inst2|o[5]~18                                                                 ; out              ;
+; |CPU_sakura|xuanzeqi:inst2|o[5]                                                                          ; |CPU_sakura|xuanzeqi:inst2|o[5]                                                                    ; out              ;
+; |CPU_sakura|xuanzeqi:inst2|o[6]~20                                                                       ; |CPU_sakura|xuanzeqi:inst2|o[6]~20                                                                 ; out              ;
+; |CPU_sakura|xuanzeqi:inst2|o[6]                                                                          ; |CPU_sakura|xuanzeqi:inst2|o[6]                                                                    ; out              ;
+; |CPU_sakura|xuanzeqi:inst2|o[7]~22                                                                       ; |CPU_sakura|xuanzeqi:inst2|o[7]~22                                                                 ; out0             ;
+; |CPU_sakura|xuanzeqi:inst2|o[7]~23                                                                       ; |CPU_sakura|xuanzeqi:inst2|o[7]~23                                                                 ; out              ;
+; |CPU_sakura|xuanzeqi:inst2|o[7]~24                                                                       ; |CPU_sakura|xuanzeqi:inst2|o[7]~24                                                                 ; out0             ;
+; |CPU_sakura|xuanzeqi:inst2|o[7]                                                                          ; |CPU_sakura|xuanzeqi:inst2|o[7]                                                                    ; out              ;
+; |CPU_sakura|alu_sh:inst10|process_0~0                                                                    ; |CPU_sakura|alu_sh:inst10|process_0~0                                                              ; out0             ;
+; |CPU_sakura|alu_sh:inst10|process_0~1                                                                    ; |CPU_sakura|alu_sh:inst10|process_0~1                                                              ; out0             ;
+; |CPU_sakura|alu_sh:inst10|process_0~2                                                                    ; |CPU_sakura|alu_sh:inst10|process_0~2                                                              ; out0             ;
+; |CPU_sakura|alu_sh:inst10|process_0~3                                                                    ; |CPU_sakura|alu_sh:inst10|process_0~3                                                              ; out0             ;
+; |CPU_sakura|alu_sh:inst10|process_0~4                                                                    ; |CPU_sakura|alu_sh:inst10|process_0~4                                                              ; out0             ;
+; |CPU_sakura|alu_sh:inst10|process_0~5                                                                    ; |CPU_sakura|alu_sh:inst10|process_0~5                                                              ; out0             ;
+; |CPU_sakura|alu_sh:inst10|o[7]~0                                                                         ; |CPU_sakura|alu_sh:inst10|o[7]~0                                                                   ; out              ;
+; |CPU_sakura|alu_sh:inst10|o[6]~1                                                                         ; |CPU_sakura|alu_sh:inst10|o[6]~1                                                                   ; out              ;
+; |CPU_sakura|alu_sh:inst10|o[5]~2                                                                         ; |CPU_sakura|alu_sh:inst10|o[5]~2                                                                   ; out              ;
+; |CPU_sakura|alu_sh:inst10|o[4]~3                                                                         ; |CPU_sakura|alu_sh:inst10|o[4]~3                                                                   ; out              ;
+; |CPU_sakura|alu_sh:inst10|o[3]~4                                                                         ; |CPU_sakura|alu_sh:inst10|o[3]~4                                                                   ; out              ;
+; |CPU_sakura|alu_sh:inst10|o[2]~5                                                                         ; |CPU_sakura|alu_sh:inst10|o[2]~5                                                                   ; out              ;
+; |CPU_sakura|alu_sh:inst10|o[1]~6                                                                         ; |CPU_sakura|alu_sh:inst10|o[1]~6                                                                   ; out              ;
+; |CPU_sakura|alu_sh:inst10|o[0]~7                                                                         ; |CPU_sakura|alu_sh:inst10|o[0]~7                                                                   ; out              ;
+; |CPU_sakura|alu_sh:inst10|c~0                                                                            ; |CPU_sakura|alu_sh:inst10|c~0                                                                      ; out              ;
+; |CPU_sakura|alu_sh:inst10|c~1                                                                            ; |CPU_sakura|alu_sh:inst10|c~1                                                                      ; out0             ;
+; |CPU_sakura|alu_sh:inst10|c~2                                                                            ; |CPU_sakura|alu_sh:inst10|c~2                                                                      ; out              ;
+; |CPU_sakura|alu_sh:inst10|c~3                                                                            ; |CPU_sakura|alu_sh:inst10|c~3                                                                      ; out0             ;
+; |CPU_sakura|alu_sh:inst10|c                                                                              ; |CPU_sakura|alu_sh:inst10|c                                                                        ; out              ;
+; |CPU_sakura|alu_sh:inst10|o[0]~8                                                                         ; |CPU_sakura|alu_sh:inst10|o[0]~8                                                                   ; out              ;
+; |CPU_sakura|alu_sh:inst10|o[0]                                                                           ; |CPU_sakura|alu_sh:inst10|o[0]                                                                     ; out              ;
+; |CPU_sakura|alu_sh:inst10|o[1]~10                                                                        ; |CPU_sakura|alu_sh:inst10|o[1]~10                                                                  ; out              ;
+; |CPU_sakura|alu_sh:inst10|o[1]                                                                           ; |CPU_sakura|alu_sh:inst10|o[1]                                                                     ; out              ;
+; |CPU_sakura|alu_sh:inst10|o[2]~12                                                                        ; |CPU_sakura|alu_sh:inst10|o[2]~12                                                                  ; out              ;
+; |CPU_sakura|alu_sh:inst10|o[2]                                                                           ; |CPU_sakura|alu_sh:inst10|o[2]                                                                     ; out              ;
+; |CPU_sakura|alu_sh:inst10|o[3]~14                                                                        ; |CPU_sakura|alu_sh:inst10|o[3]~14                                                                  ; out              ;
+; |CPU_sakura|alu_sh:inst10|o[3]                                                                           ; |CPU_sakura|alu_sh:inst10|o[3]                                                                     ; out              ;
+; |CPU_sakura|alu_sh:inst10|o[4]~16                                                                        ; |CPU_sakura|alu_sh:inst10|o[4]~16                                                                  ; out              ;
+; |CPU_sakura|alu_sh:inst10|o[4]                                                                           ; |CPU_sakura|alu_sh:inst10|o[4]                                                                     ; out              ;
+; |CPU_sakura|alu_sh:inst10|o[5]~18                                                                        ; |CPU_sakura|alu_sh:inst10|o[5]~18                                                                  ; out              ;
+; |CPU_sakura|alu_sh:inst10|o[5]                                                                           ; |CPU_sakura|alu_sh:inst10|o[5]                                                                     ; out              ;
+; |CPU_sakura|alu_sh:inst10|o[6]~20                                                                        ; |CPU_sakura|alu_sh:inst10|o[6]~20                                                                  ; out              ;
+; |CPU_sakura|alu_sh:inst10|o[6]                                                                           ; |CPU_sakura|alu_sh:inst10|o[6]                                                                     ; out              ;
+; |CPU_sakura|alu_sh:inst10|o[7]~22                                                                        ; |CPU_sakura|alu_sh:inst10|o[7]~22                                                                  ; out              ;
+; |CPU_sakura|alu_sh:inst10|o[7]                                                                           ; |CPU_sakura|alu_sh:inst10|o[7]                                                                     ; out              ;
+; |CPU_sakura|kmux_2:inst8|o[7]                                                                            ; |CPU_sakura|kmux_2:inst8|o[7]                                                                      ; out              ;
+; |CPU_sakura|kmux_2:inst8|o[6]                                                                            ; |CPU_sakura|kmux_2:inst8|o[6]                                                                      ; out              ;
+; |CPU_sakura|kmux_2:inst8|o[5]                                                                            ; |CPU_sakura|kmux_2:inst8|o[5]                                                                      ; out              ;
+; |CPU_sakura|kmux_2:inst8|o[4]                                                                            ; |CPU_sakura|kmux_2:inst8|o[4]                                                                      ; out              ;
+; |CPU_sakura|kmux_2:inst8|o[3]                                                                            ; |CPU_sakura|kmux_2:inst8|o[3]                                                                      ; out              ;
+; |CPU_sakura|kmux_2:inst8|o[2]                                                                            ; |CPU_sakura|kmux_2:inst8|o[2]                                                                      ; out              ;
+; |CPU_sakura|kmux_2:inst8|o[1]                                                                            ; |CPU_sakura|kmux_2:inst8|o[1]                                                                      ; out              ;
+; |CPU_sakura|kmux_2:inst8|o[0]                                                                            ; |CPU_sakura|kmux_2:inst8|o[0]                                                                      ; out              ;
+; |CPU_sakura|tyjcq:inst5|AO~1                                                                             ; |CPU_sakura|tyjcq:inst5|AO~1                                                                       ; out              ;
+; |CPU_sakura|tyjcq:inst5|AO~2                                                                             ; |CPU_sakura|tyjcq:inst5|AO~2                                                                       ; out              ;
+; |CPU_sakura|tyjcq:inst5|AO~3                                                                             ; |CPU_sakura|tyjcq:inst5|AO~3                                                                       ; out              ;
+; |CPU_sakura|tyjcq:inst5|AO~4                                                                             ; |CPU_sakura|tyjcq:inst5|AO~4                                                                       ; out              ;
+; |CPU_sakura|tyjcq:inst5|AO~5                                                                             ; |CPU_sakura|tyjcq:inst5|AO~5                                                                       ; out              ;
+; |CPU_sakura|tyjcq:inst5|AO~6                                                                             ; |CPU_sakura|tyjcq:inst5|AO~6                                                                       ; out              ;
+; |CPU_sakura|tyjcq:inst5|AO~7                                                                             ; |CPU_sakura|tyjcq:inst5|AO~7                                                                       ; out              ;
+; |CPU_sakura|tyjcq:inst5|AO[7]                                                                            ; |CPU_sakura|tyjcq:inst5|AO[7]                                                                      ; out              ;
+; |CPU_sakura|tyjcq:inst5|AO[6]                                                                            ; |CPU_sakura|tyjcq:inst5|AO[6]                                                                      ; out              ;
+; |CPU_sakura|tyjcq:inst5|AO[5]                                                                            ; |CPU_sakura|tyjcq:inst5|AO[5]                                                                      ; out              ;
+; |CPU_sakura|tyjcq:inst5|AO[4]                                                                            ; |CPU_sakura|tyjcq:inst5|AO[4]                                                                      ; out              ;
+; |CPU_sakura|tyjcq:inst5|AO[3]                                                                            ; |CPU_sakura|tyjcq:inst5|AO[3]                                                                      ; out              ;
+; |CPU_sakura|tyjcq:inst5|AO[2]                                                                            ; |CPU_sakura|tyjcq:inst5|AO[2]                                                                      ; out              ;
+; |CPU_sakura|tyjcq:inst5|AO[1]                                                                            ; |CPU_sakura|tyjcq:inst5|AO[1]                                                                      ; out              ;
+; |CPU_sakura|tyjcq:inst5|AO[0]                                                                            ; |CPU_sakura|tyjcq:inst5|AO[0]                                                                      ; out              ;
+; |CPU_sakura|tyjcq:inst5|BO~1                                                                             ; |CPU_sakura|tyjcq:inst5|BO~1                                                                       ; out              ;
+; |CPU_sakura|tyjcq:inst5|BO~2                                                                             ; |CPU_sakura|tyjcq:inst5|BO~2                                                                       ; out              ;
+; |CPU_sakura|tyjcq:inst5|BO~3                                                                             ; |CPU_sakura|tyjcq:inst5|BO~3                                                                       ; out              ;
+; |CPU_sakura|tyjcq:inst5|BO~4                                                                             ; |CPU_sakura|tyjcq:inst5|BO~4                                                                       ; out              ;
+; |CPU_sakura|tyjcq:inst5|BO~5                                                                             ; |CPU_sakura|tyjcq:inst5|BO~5                                                                       ; out              ;
+; |CPU_sakura|tyjcq:inst5|BO~6                                                                             ; |CPU_sakura|tyjcq:inst5|BO~6                                                                       ; out              ;
+; |CPU_sakura|tyjcq:inst5|BO~7                                                                             ; |CPU_sakura|tyjcq:inst5|BO~7                                                                       ; out              ;
+; |CPU_sakura|tyjcq:inst5|BO[7]                                                                            ; |CPU_sakura|tyjcq:inst5|BO[7]                                                                      ; out              ;
+; |CPU_sakura|tyjcq:inst5|BO[6]                                                                            ; |CPU_sakura|tyjcq:inst5|BO[6]                                                                      ; out              ;
+; |CPU_sakura|tyjcq:inst5|BO[5]                                                                            ; |CPU_sakura|tyjcq:inst5|BO[5]                                                                      ; out              ;
+; |CPU_sakura|tyjcq:inst5|BO[4]                                                                            ; |CPU_sakura|tyjcq:inst5|BO[4]                                                                      ; out              ;
+; |CPU_sakura|tyjcq:inst5|BO[3]                                                                            ; |CPU_sakura|tyjcq:inst5|BO[3]                                                                      ; out              ;
+; |CPU_sakura|tyjcq:inst5|BO[2]                                                                            ; |CPU_sakura|tyjcq:inst5|BO[2]                                                                      ; out              ;
+; |CPU_sakura|tyjcq:inst5|BO[1]                                                                            ; |CPU_sakura|tyjcq:inst5|BO[1]                                                                      ; out              ;
+; |CPU_sakura|tyjcq:inst5|BO[0]                                                                            ; |CPU_sakura|tyjcq:inst5|BO[0]                                                                      ; out              ;
+; |CPU_sakura|tyjcq:inst5|A~0                                                                              ; |CPU_sakura|tyjcq:inst5|A~0                                                                        ; out              ;
+; |CPU_sakura|tyjcq:inst5|A~1                                                                              ; |CPU_sakura|tyjcq:inst5|A~1                                                                        ; out              ;
+; |CPU_sakura|tyjcq:inst5|A~2                                                                              ; |CPU_sakura|tyjcq:inst5|A~2                                                                        ; out              ;
+; |CPU_sakura|tyjcq:inst5|A~3                                                                              ; |CPU_sakura|tyjcq:inst5|A~3                                                                        ; out              ;
+; |CPU_sakura|tyjcq:inst5|A~4                                                                              ; |CPU_sakura|tyjcq:inst5|A~4                                                                        ; out              ;
+; |CPU_sakura|tyjcq:inst5|A~5                                                                              ; |CPU_sakura|tyjcq:inst5|A~5                                                                        ; out              ;
+; |CPU_sakura|tyjcq:inst5|A~6                                                                              ; |CPU_sakura|tyjcq:inst5|A~6                                                                        ; out              ;
+; |CPU_sakura|tyjcq:inst5|A~7                                                                              ; |CPU_sakura|tyjcq:inst5|A~7                                                                        ; out              ;
+; |CPU_sakura|tyjcq:inst5|B~0                                                                              ; |CPU_sakura|tyjcq:inst5|B~0                                                                        ; out              ;
+; |CPU_sakura|tyjcq:inst5|B~1                                                                              ; |CPU_sakura|tyjcq:inst5|B~1                                                                        ; out              ;
+; |CPU_sakura|tyjcq:inst5|B~3                                                                              ; |CPU_sakura|tyjcq:inst5|B~3                                                                        ; out              ;
+; |CPU_sakura|tyjcq:inst5|B~4                                                                              ; |CPU_sakura|tyjcq:inst5|B~4                                                                        ; out              ;
+; |CPU_sakura|tyjcq:inst5|B~5                                                                              ; |CPU_sakura|tyjcq:inst5|B~5                                                                        ; out              ;
+; |CPU_sakura|tyjcq:inst5|B~6                                                                              ; |CPU_sakura|tyjcq:inst5|B~6                                                                        ; out              ;
+; |CPU_sakura|tyjcq:inst5|B~8                                                                              ; |CPU_sakura|tyjcq:inst5|B~8                                                                        ; out              ;
+; |CPU_sakura|tyjcq:inst5|B~9                                                                              ; |CPU_sakura|tyjcq:inst5|B~9                                                                        ; out              ;
+; |CPU_sakura|tyjcq:inst5|B~11                                                                             ; |CPU_sakura|tyjcq:inst5|B~11                                                                       ; out              ;
+; |CPU_sakura|tyjcq:inst5|B~12                                                                             ; |CPU_sakura|tyjcq:inst5|B~12                                                                       ; out              ;
+; |CPU_sakura|tyjcq:inst5|B~13                                                                             ; |CPU_sakura|tyjcq:inst5|B~13                                                                       ; out              ;
+; |CPU_sakura|tyjcq:inst5|B~14                                                                             ; |CPU_sakura|tyjcq:inst5|B~14                                                                       ; out              ;
+; |CPU_sakura|tyjcq:inst5|C~0                                                                              ; |CPU_sakura|tyjcq:inst5|C~0                                                                        ; out              ;
+; |CPU_sakura|tyjcq:inst5|C~1                                                                              ; |CPU_sakura|tyjcq:inst5|C~1                                                                        ; out              ;
+; |CPU_sakura|tyjcq:inst5|C~2                                                                              ; |CPU_sakura|tyjcq:inst5|C~2                                                                        ; out              ;
+; |CPU_sakura|tyjcq:inst5|C~3                                                                              ; |CPU_sakura|tyjcq:inst5|C~3                                                                        ; out              ;
+; |CPU_sakura|tyjcq:inst5|C~4                                                                              ; |CPU_sakura|tyjcq:inst5|C~4                                                                        ; out              ;
+; |CPU_sakura|tyjcq:inst5|C~5                                                                              ; |CPU_sakura|tyjcq:inst5|C~5                                                                        ; out              ;
+; |CPU_sakura|tyjcq:inst5|C~6                                                                              ; |CPU_sakura|tyjcq:inst5|C~6                                                                        ; out              ;
+; |CPU_sakura|tyjcq:inst5|C~7                                                                              ; |CPU_sakura|tyjcq:inst5|C~7                                                                        ; out              ;
+; |CPU_sakura|tyjcq:inst5|C~8                                                                              ; |CPU_sakura|tyjcq:inst5|C~8                                                                        ; out              ;
+; |CPU_sakura|tyjcq:inst5|C~9                                                                              ; |CPU_sakura|tyjcq:inst5|C~9                                                                        ; out              ;
+; |CPU_sakura|tyjcq:inst5|C~10                                                                             ; |CPU_sakura|tyjcq:inst5|C~10                                                                       ; out              ;
+; |CPU_sakura|tyjcq:inst5|C~11                                                                             ; |CPU_sakura|tyjcq:inst5|C~11                                                                       ; out              ;
+; |CPU_sakura|tyjcq:inst5|C~12                                                                             ; |CPU_sakura|tyjcq:inst5|C~12                                                                       ; out              ;
+; |CPU_sakura|tyjcq:inst5|C~13                                                                             ; |CPU_sakura|tyjcq:inst5|C~13                                                                       ; out              ;
+; |CPU_sakura|tyjcq:inst5|C~14                                                                             ; |CPU_sakura|tyjcq:inst5|C~14                                                                       ; out              ;
+; |CPU_sakura|tyjcq:inst5|C~15                                                                             ; |CPU_sakura|tyjcq:inst5|C~15                                                                       ; out              ;
+; |CPU_sakura|tyjcq:inst5|C~16                                                                             ; |CPU_sakura|tyjcq:inst5|C~16                                                                       ; out              ;
+; |CPU_sakura|tyjcq:inst5|C~17                                                                             ; |CPU_sakura|tyjcq:inst5|C~17                                                                       ; out              ;
+; |CPU_sakura|tyjcq:inst5|C~18                                                                             ; |CPU_sakura|tyjcq:inst5|C~18                                                                       ; out              ;
+; |CPU_sakura|tyjcq:inst5|C~19                                                                             ; |CPU_sakura|tyjcq:inst5|C~19                                                                       ; out              ;
+; |CPU_sakura|tyjcq:inst5|C~20                                                                             ; |CPU_sakura|tyjcq:inst5|C~20                                                                       ; out              ;
+; |CPU_sakura|tyjcq:inst5|C~21                                                                             ; |CPU_sakura|tyjcq:inst5|C~21                                                                       ; out              ;
+; |CPU_sakura|tyjcq:inst5|C~22                                                                             ; |CPU_sakura|tyjcq:inst5|C~22                                                                       ; out              ;
+; |CPU_sakura|tyjcq:inst5|C~23                                                                             ; |CPU_sakura|tyjcq:inst5|C~23                                                                       ; out              ;
+; |CPU_sakura|tyjcq:inst5|C[4]                                                                             ; |CPU_sakura|tyjcq:inst5|C[4]                                                                       ; regout           ;
+; |CPU_sakura|tyjcq:inst5|C[6]                                                                             ; |CPU_sakura|tyjcq:inst5|C[6]                                                                       ; regout           ;
+; |CPU_sakura|tyjcq:inst5|A[0]                                                                             ; |CPU_sakura|tyjcq:inst5|A[0]                                                                       ; regout           ;
+; |CPU_sakura|tyjcq:inst5|A[1]                                                                             ; |CPU_sakura|tyjcq:inst5|A[1]                                                                       ; regout           ;
+; |CPU_sakura|tyjcq:inst5|A[2]                                                                             ; |CPU_sakura|tyjcq:inst5|A[2]                                                                       ; regout           ;
+; |CPU_sakura|tyjcq:inst5|A[3]                                                                             ; |CPU_sakura|tyjcq:inst5|A[3]                                                                       ; regout           ;
+; |CPU_sakura|tyjcq:inst5|A[4]                                                                             ; |CPU_sakura|tyjcq:inst5|A[4]                                                                       ; regout           ;
+; |CPU_sakura|tyjcq:inst5|A[5]                                                                             ; |CPU_sakura|tyjcq:inst5|A[5]                                                                       ; regout           ;
+; |CPU_sakura|tyjcq:inst5|A[6]                                                                             ; |CPU_sakura|tyjcq:inst5|A[6]                                                                       ; regout           ;
+; |CPU_sakura|tyjcq:inst5|A[7]                                                                             ; |CPU_sakura|tyjcq:inst5|A[7]                                                                       ; regout           ;
+; |CPU_sakura|alu_calculate:inst9|process_0~0                                                              ; |CPU_sakura|alu_calculate:inst9|process_0~0                                                        ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|process_0~1                                                              ; |CPU_sakura|alu_calculate:inst9|process_0~1                                                        ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|r~0                                                                      ; |CPU_sakura|alu_calculate:inst9|r~0                                                                ; out              ;
+; |CPU_sakura|alu_calculate:inst9|r~1                                                                      ; |CPU_sakura|alu_calculate:inst9|r~1                                                                ; out              ;
+; |CPU_sakura|alu_calculate:inst9|r~2                                                                      ; |CPU_sakura|alu_calculate:inst9|r~2                                                                ; out              ;
+; |CPU_sakura|alu_calculate:inst9|r~3                                                                      ; |CPU_sakura|alu_calculate:inst9|r~3                                                                ; out              ;
+; |CPU_sakura|alu_calculate:inst9|r~4                                                                      ; |CPU_sakura|alu_calculate:inst9|r~4                                                                ; out              ;
+; |CPU_sakura|alu_calculate:inst9|r~5                                                                      ; |CPU_sakura|alu_calculate:inst9|r~5                                                                ; out              ;
+; |CPU_sakura|alu_calculate:inst9|r~6                                                                      ; |CPU_sakura|alu_calculate:inst9|r~6                                                                ; out              ;
+; |CPU_sakura|alu_calculate:inst9|r~7                                                                      ; |CPU_sakura|alu_calculate:inst9|r~7                                                                ; out              ;
+; |CPU_sakura|alu_calculate:inst9|r~8                                                                      ; |CPU_sakura|alu_calculate:inst9|r~8                                                                ; out              ;
+; |CPU_sakura|alu_calculate:inst9|r~9                                                                      ; |CPU_sakura|alu_calculate:inst9|r~9                                                                ; out              ;
+; |CPU_sakura|alu_calculate:inst9|r~10                                                                     ; |CPU_sakura|alu_calculate:inst9|r~10                                                               ; out              ;
+; |CPU_sakura|alu_calculate:inst9|r~11                                                                     ; |CPU_sakura|alu_calculate:inst9|r~11                                                               ; out              ;
+; |CPU_sakura|alu_calculate:inst9|r~12                                                                     ; |CPU_sakura|alu_calculate:inst9|r~12                                                               ; out              ;
+; |CPU_sakura|alu_calculate:inst9|r~13                                                                     ; |CPU_sakura|alu_calculate:inst9|r~13                                                               ; out              ;
+; |CPU_sakura|alu_calculate:inst9|r~14                                                                     ; |CPU_sakura|alu_calculate:inst9|r~14                                                               ; out              ;
+; |CPU_sakura|alu_calculate:inst9|r~15                                                                     ; |CPU_sakura|alu_calculate:inst9|r~15                                                               ; out              ;
+; |CPU_sakura|alu_calculate:inst9|c~0                                                                      ; |CPU_sakura|alu_calculate:inst9|c~0                                                                ; out              ;
+; |CPU_sakura|alu_calculate:inst9|z~0                                                                      ; |CPU_sakura|alu_calculate:inst9|z~0                                                                ; out              ;
+; |CPU_sakura|alu_calculate:inst9|process_0~2                                                              ; |CPU_sakura|alu_calculate:inst9|process_0~2                                                        ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|r~16                                                                     ; |CPU_sakura|alu_calculate:inst9|r~16                                                               ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|r~17                                                                     ; |CPU_sakura|alu_calculate:inst9|r~17                                                               ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|r~18                                                                     ; |CPU_sakura|alu_calculate:inst9|r~18                                                               ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|r~19                                                                     ; |CPU_sakura|alu_calculate:inst9|r~19                                                               ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|r~20                                                                     ; |CPU_sakura|alu_calculate:inst9|r~20                                                               ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|r~21                                                                     ; |CPU_sakura|alu_calculate:inst9|r~21                                                               ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|r~22                                                                     ; |CPU_sakura|alu_calculate:inst9|r~22                                                               ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|r~23                                                                     ; |CPU_sakura|alu_calculate:inst9|r~23                                                               ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|process_0~3                                                              ; |CPU_sakura|alu_calculate:inst9|process_0~3                                                        ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|process_0~4                                                              ; |CPU_sakura|alu_calculate:inst9|process_0~4                                                        ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|r~24                                                                     ; |CPU_sakura|alu_calculate:inst9|r~24                                                               ; out              ;
+; |CPU_sakura|alu_calculate:inst9|r~25                                                                     ; |CPU_sakura|alu_calculate:inst9|r~25                                                               ; out              ;
+; |CPU_sakura|alu_calculate:inst9|r~26                                                                     ; |CPU_sakura|alu_calculate:inst9|r~26                                                               ; out              ;
+; |CPU_sakura|alu_calculate:inst9|r~27                                                                     ; |CPU_sakura|alu_calculate:inst9|r~27                                                               ; out              ;
+; |CPU_sakura|alu_calculate:inst9|r~28                                                                     ; |CPU_sakura|alu_calculate:inst9|r~28                                                               ; out              ;
+; |CPU_sakura|alu_calculate:inst9|r~29                                                                     ; |CPU_sakura|alu_calculate:inst9|r~29                                                               ; out              ;
+; |CPU_sakura|alu_calculate:inst9|r~30                                                                     ; |CPU_sakura|alu_calculate:inst9|r~30                                                               ; out              ;
+; |CPU_sakura|alu_calculate:inst9|r~31                                                                     ; |CPU_sakura|alu_calculate:inst9|r~31                                                               ; out              ;
+; |CPU_sakura|alu_calculate:inst9|r~32                                                                     ; |CPU_sakura|alu_calculate:inst9|r~32                                                               ; out              ;
+; |CPU_sakura|alu_calculate:inst9|r~33                                                                     ; |CPU_sakura|alu_calculate:inst9|r~33                                                               ; out              ;
+; |CPU_sakura|alu_calculate:inst9|r~34                                                                     ; |CPU_sakura|alu_calculate:inst9|r~34                                                               ; out              ;
+; |CPU_sakura|alu_calculate:inst9|r~35                                                                     ; |CPU_sakura|alu_calculate:inst9|r~35                                                               ; out              ;
+; |CPU_sakura|alu_calculate:inst9|r~36                                                                     ; |CPU_sakura|alu_calculate:inst9|r~36                                                               ; out              ;
+; |CPU_sakura|alu_calculate:inst9|r~37                                                                     ; |CPU_sakura|alu_calculate:inst9|r~37                                                               ; out              ;
+; |CPU_sakura|alu_calculate:inst9|r~38                                                                     ; |CPU_sakura|alu_calculate:inst9|r~38                                                               ; out              ;
+; |CPU_sakura|alu_calculate:inst9|r~39                                                                     ; |CPU_sakura|alu_calculate:inst9|r~39                                                               ; out              ;
+; |CPU_sakura|alu_calculate:inst9|r~40                                                                     ; |CPU_sakura|alu_calculate:inst9|r~40                                                               ; out              ;
+; |CPU_sakura|alu_calculate:inst9|r~41                                                                     ; |CPU_sakura|alu_calculate:inst9|r~41                                                               ; out              ;
+; |CPU_sakura|alu_calculate:inst9|r~42                                                                     ; |CPU_sakura|alu_calculate:inst9|r~42                                                               ; out              ;
+; |CPU_sakura|alu_calculate:inst9|r~43                                                                     ; |CPU_sakura|alu_calculate:inst9|r~43                                                               ; out              ;
+; |CPU_sakura|alu_calculate:inst9|r~44                                                                     ; |CPU_sakura|alu_calculate:inst9|r~44                                                               ; out              ;
+; |CPU_sakura|alu_calculate:inst9|r~45                                                                     ; |CPU_sakura|alu_calculate:inst9|r~45                                                               ; out              ;
+; |CPU_sakura|alu_calculate:inst9|r~46                                                                     ; |CPU_sakura|alu_calculate:inst9|r~46                                                               ; out              ;
+; |CPU_sakura|alu_calculate:inst9|r~47                                                                     ; |CPU_sakura|alu_calculate:inst9|r~47                                                               ; out              ;
+; |CPU_sakura|alu_calculate:inst9|r~48                                                                     ; |CPU_sakura|alu_calculate:inst9|r~48                                                               ; out              ;
+; |CPU_sakura|alu_calculate:inst9|r~49                                                                     ; |CPU_sakura|alu_calculate:inst9|r~49                                                               ; out              ;
+; |CPU_sakura|alu_calculate:inst9|r~50                                                                     ; |CPU_sakura|alu_calculate:inst9|r~50                                                               ; out              ;
+; |CPU_sakura|alu_calculate:inst9|r~51                                                                     ; |CPU_sakura|alu_calculate:inst9|r~51                                                               ; out              ;
+; |CPU_sakura|alu_calculate:inst9|r~52                                                                     ; |CPU_sakura|alu_calculate:inst9|r~52                                                               ; out              ;
+; |CPU_sakura|alu_calculate:inst9|r~53                                                                     ; |CPU_sakura|alu_calculate:inst9|r~53                                                               ; out              ;
+; |CPU_sakura|alu_calculate:inst9|r~54                                                                     ; |CPU_sakura|alu_calculate:inst9|r~54                                                               ; out              ;
+; |CPU_sakura|alu_calculate:inst9|r~55                                                                     ; |CPU_sakura|alu_calculate:inst9|r~55                                                               ; out              ;
+; |CPU_sakura|alu_calculate:inst9|r[7]                                                                     ; |CPU_sakura|alu_calculate:inst9|r[7]                                                               ; out              ;
+; |CPU_sakura|alu_calculate:inst9|r[6]                                                                     ; |CPU_sakura|alu_calculate:inst9|r[6]                                                               ; out              ;
+; |CPU_sakura|alu_calculate:inst9|r[5]                                                                     ; |CPU_sakura|alu_calculate:inst9|r[5]                                                               ; out              ;
+; |CPU_sakura|alu_calculate:inst9|r[4]                                                                     ; |CPU_sakura|alu_calculate:inst9|r[4]                                                               ; out              ;
+; |CPU_sakura|alu_calculate:inst9|r[3]                                                                     ; |CPU_sakura|alu_calculate:inst9|r[3]                                                               ; out              ;
+; |CPU_sakura|alu_calculate:inst9|r[2]                                                                     ; |CPU_sakura|alu_calculate:inst9|r[2]                                                               ; out              ;
+; |CPU_sakura|alu_calculate:inst9|r[1]                                                                     ; |CPU_sakura|alu_calculate:inst9|r[1]                                                               ; out              ;
+; |CPU_sakura|alu_calculate:inst9|r[0]                                                                     ; |CPU_sakura|alu_calculate:inst9|r[0]                                                               ; out              ;
+; |CPU_sakura|alu_calculate:inst9|c                                                                        ; |CPU_sakura|alu_calculate:inst9|c                                                                  ; out              ;
+; |CPU_sakura|cz_jcq:inst11|c_o                                                                            ; |CPU_sakura|cz_jcq:inst11|c_o                                                                      ; regout           ;
+; |CPU_sakura|zljcq_ir:inst4|o_store[0]                                                                    ; |CPU_sakura|zljcq_ir:inst4|o_store[0]                                                              ; regout           ;
+; |CPU_sakura|zljcq_ir:inst4|o_store[1]                                                                    ; |CPU_sakura|zljcq_ir:inst4|o_store[1]                                                              ; regout           ;
+; |CPU_sakura|zljcq_ir:inst4|o_store[2]                                                                    ; |CPU_sakura|zljcq_ir:inst4|o_store[2]                                                              ; regout           ;
+; |CPU_sakura|zljcq_ir:inst4|o_store[3]                                                                    ; |CPU_sakura|zljcq_ir:inst4|o_store[3]                                                              ; regout           ;
+; |CPU_sakura|zljcq_ir:inst4|o_store[4]                                                                    ; |CPU_sakura|zljcq_ir:inst4|o_store[4]                                                              ; regout           ;
+; |CPU_sakura|zljcq_ir:inst4|o_store[5]                                                                    ; |CPU_sakura|zljcq_ir:inst4|o_store[5]                                                              ; regout           ;
+; |CPU_sakura|zljcq_ir:inst4|o_store[6]                                                                    ; |CPU_sakura|zljcq_ir:inst4|o_store[6]                                                              ; regout           ;
+; |CPU_sakura|zljcq_ir:inst4|o_store[7]                                                                    ; |CPU_sakura|zljcq_ir:inst4|o_store[7]                                                              ; regout           ;
+; |CPU_sakura|zlymq:inst6|MOVA~0                                                                           ; |CPU_sakura|zlymq:inst6|MOVA~0                                                                     ; out0             ;
+; |CPU_sakura|zlymq:inst6|MOVA                                                                             ; |CPU_sakura|zlymq:inst6|MOVA                                                                       ; out0             ;
+; |CPU_sakura|zlymq:inst6|MOVB~0                                                                           ; |CPU_sakura|zlymq:inst6|MOVB~0                                                                     ; out0             ;
+; |CPU_sakura|zlymq:inst6|MOVB                                                                             ; |CPU_sakura|zlymq:inst6|MOVB                                                                       ; out0             ;
+; |CPU_sakura|zlymq:inst6|MOVC~0                                                                           ; |CPU_sakura|zlymq:inst6|MOVC~0                                                                     ; out0             ;
+; |CPU_sakura|zlymq:inst6|MOVC                                                                             ; |CPU_sakura|zlymq:inst6|MOVC                                                                       ; out0             ;
+; |CPU_sakura|zlymq:inst6|ALU~0                                                                            ; |CPU_sakura|zlymq:inst6|ALU~0                                                                      ; out0             ;
+; |CPU_sakura|zlymq:inst6|ALU~1                                                                            ; |CPU_sakura|zlymq:inst6|ALU~1                                                                      ; out0             ;
+; |CPU_sakura|zlymq:inst6|ALU~2                                                                            ; |CPU_sakura|zlymq:inst6|ALU~2                                                                      ; out0             ;
+; |CPU_sakura|zlymq:inst6|ALU                                                                              ; |CPU_sakura|zlymq:inst6|ALU                                                                        ; out0             ;
+; |CPU_sakura|zlymq:inst6|NOT0                                                                             ; |CPU_sakura|zlymq:inst6|NOT0                                                                       ; out0             ;
+; |CPU_sakura|zlymq:inst6|SHR~0                                                                            ; |CPU_sakura|zlymq:inst6|SHR~0                                                                      ; out0             ;
+; |CPU_sakura|zlymq:inst6|SHR                                                                              ; |CPU_sakura|zlymq:inst6|SHR                                                                        ; out0             ;
+; |CPU_sakura|zlymq:inst6|SHL~0                                                                            ; |CPU_sakura|zlymq:inst6|SHL~0                                                                      ; out0             ;
+; |CPU_sakura|zlymq:inst6|SHL                                                                              ; |CPU_sakura|zlymq:inst6|SHL                                                                        ; out0             ;
+; |CPU_sakura|zlymq:inst6|IN0                                                                              ; |CPU_sakura|zlymq:inst6|IN0                                                                        ; out0             ;
+; |CPU_sakura|zlymq:inst6|OUT0                                                                             ; |CPU_sakura|zlymq:inst6|OUT0                                                                       ; out0             ;
+; |CPU_sakura|control_sigch:inst7|panduan~1                                                                ; |CPU_sakura|control_sigch:inst7|panduan~1                                                          ; out0             ;
+; |CPU_sakura|control_sigch:inst7|panduan~2                                                                ; |CPU_sakura|control_sigch:inst7|panduan~2                                                          ; out0             ;
+; |CPU_sakura|control_sigch:inst7|panduan                                                                  ; |CPU_sakura|control_sigch:inst7|panduan                                                            ; out0             ;
+; |CPU_sakura|control_sigch:inst7|F_BUS~0                                                                  ; |CPU_sakura|control_sigch:inst7|F_BUS~0                                                            ; out0             ;
+; |CPU_sakura|control_sigch:inst7|F_BUS~1                                                                  ; |CPU_sakura|control_sigch:inst7|F_BUS~1                                                            ; out0             ;
+; |CPU_sakura|control_sigch:inst7|F_BUS                                                                    ; |CPU_sakura|control_sigch:inst7|F_BUS                                                              ; out0             ;
+; |CPU_sakura|control_sigch:inst7|WE~0                                                                     ; |CPU_sakura|control_sigch:inst7|WE~0                                                               ; out0             ;
+; |CPU_sakura|control_sigch:inst7|WE~1                                                                     ; |CPU_sakura|control_sigch:inst7|WE~1                                                               ; out0             ;
+; |CPU_sakura|control_sigch:inst7|WE~2                                                                     ; |CPU_sakura|control_sigch:inst7|WE~2                                                               ; out0             ;
+; |CPU_sakura|control_sigch:inst7|WE~3                                                                     ; |CPU_sakura|control_sigch:inst7|WE~3                                                               ; out0             ;
+; |CPU_sakura|control_sigch:inst7|WE~4                                                                     ; |CPU_sakura|control_sigch:inst7|WE~4                                                               ; out0             ;
+; |CPU_sakura|control_sigch:inst7|WE~5                                                                     ; |CPU_sakura|control_sigch:inst7|WE~5                                                               ; out0             ;
+; |CPU_sakura|control_sigch:inst7|EN_CZ~0                                                                  ; |CPU_sakura|control_sigch:inst7|EN_CZ~0                                                            ; out0             ;
+; |CPU_sakura|control_sigch:inst7|EN_CZ~1                                                                  ; |CPU_sakura|control_sigch:inst7|EN_CZ~1                                                            ; out0             ;
+; |CPU_sakura|control_sigch:inst7|EN_CZ                                                                    ; |CPU_sakura|control_sigch:inst7|EN_CZ                                                              ; out0             ;
+; |CPU_sakura|control_sigch:inst7|DL~0                                                                     ; |CPU_sakura|control_sigch:inst7|DL~0                                                               ; out0             ;
+; |CPU_sakura|control_sigch:inst7|DL~1                                                                     ; |CPU_sakura|control_sigch:inst7|DL~1                                                               ; out0             ;
+; |CPU_sakura|control_sigch:inst7|DL~2                                                                     ; |CPU_sakura|control_sigch:inst7|DL~2                                                               ; out0             ;
+; |CPU_sakura|control_sigch:inst7|DL~3                                                                     ; |CPU_sakura|control_sigch:inst7|DL~3                                                               ; out0             ;
+; |CPU_sakura|control_sigch:inst7|IN_PC~0                                                                  ; |CPU_sakura|control_sigch:inst7|IN_PC~0                                                            ; out0             ;
+; |CPU_sakura|control_sigch:inst7|IN_PC~1                                                                  ; |CPU_sakura|control_sigch:inst7|IN_PC~1                                                            ; out0             ;
+; |CPU_sakura|control_sigch:inst7|IN_PC~3                                                                  ; |CPU_sakura|control_sigch:inst7|IN_PC~3                                                            ; out0             ;
+; |CPU_sakura|control_sigch:inst7|IN_PC~4                                                                  ; |CPU_sakura|control_sigch:inst7|IN_PC~4                                                            ; out0             ;
+; |CPU_sakura|control_sigch:inst7|LD_IR                                                                    ; |CPU_sakura|control_sigch:inst7|LD_IR                                                              ; out              ;
+; |CPU_sakura|control_sigch:inst7|DL                                                                       ; |CPU_sakura|control_sigch:inst7|DL                                                                 ; out              ;
+; |CPU_sakura|control_sigch:inst7|XL                                                                       ; |CPU_sakura|control_sigch:inst7|XL                                                                 ; out              ;
+; |CPU_sakura|control_sigch:inst7|IN_PC                                                                    ; |CPU_sakura|control_sigch:inst7|IN_PC                                                              ; out              ;
+; |CPU_sakura|control_sigch:inst7|LD_PC                                                                    ; |CPU_sakura|control_sigch:inst7|LD_PC                                                              ; out              ;
+; |CPU_sakura|lpm_ram_io:inst|_~1                                                                          ; |CPU_sakura|lpm_ram_io:inst|_~1                                                                    ; out0             ;
+; |CPU_sakura|lpm_ram_io:inst|datatri[7]                                                                   ; |CPU_sakura|lpm_ram_io:inst|datatri[7]                                                             ; out              ;
+; |CPU_sakura|lpm_ram_io:inst|datatri[6]                                                                   ; |CPU_sakura|lpm_ram_io:inst|datatri[6]                                                             ; out              ;
+; |CPU_sakura|lpm_ram_io:inst|datatri[5]                                                                   ; |CPU_sakura|lpm_ram_io:inst|datatri[5]                                                             ; out              ;
+; |CPU_sakura|lpm_ram_io:inst|datatri[4]                                                                   ; |CPU_sakura|lpm_ram_io:inst|datatri[4]                                                             ; out              ;
+; |CPU_sakura|lpm_ram_io:inst|datatri[3]                                                                   ; |CPU_sakura|lpm_ram_io:inst|datatri[3]                                                             ; out              ;
+; |CPU_sakura|lpm_ram_io:inst|datatri[2]                                                                   ; |CPU_sakura|lpm_ram_io:inst|datatri[2]                                                             ; out              ;
+; |CPU_sakura|lpm_ram_io:inst|datatri[1]                                                                   ; |CPU_sakura|lpm_ram_io:inst|datatri[1]                                                             ; out              ;
+; |CPU_sakura|lpm_ram_io:inst|datatri[0]                                                                   ; |CPU_sakura|lpm_ram_io:inst|datatri[0]                                                             ; out              ;
+; |CPU_sakura|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_38a1:auto_generated|ram_block1a0 ; |CPU_sakura|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_38a1:auto_generated|q_a[0] ; portadataout0    ;
+; |CPU_sakura|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_38a1:auto_generated|ram_block1a1 ; |CPU_sakura|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_38a1:auto_generated|q_a[1] ; portadataout0    ;
+; |CPU_sakura|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_38a1:auto_generated|ram_block1a2 ; |CPU_sakura|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_38a1:auto_generated|q_a[2] ; portadataout0    ;
+; |CPU_sakura|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_38a1:auto_generated|ram_block1a3 ; |CPU_sakura|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_38a1:auto_generated|q_a[3] ; portadataout0    ;
+; |CPU_sakura|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_38a1:auto_generated|ram_block1a4 ; |CPU_sakura|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_38a1:auto_generated|q_a[4] ; portadataout0    ;
+; |CPU_sakura|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_38a1:auto_generated|ram_block1a5 ; |CPU_sakura|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_38a1:auto_generated|q_a[5] ; portadataout0    ;
+; |CPU_sakura|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_38a1:auto_generated|ram_block1a6 ; |CPU_sakura|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_38a1:auto_generated|q_a[6] ; portadataout0    ;
+; |CPU_sakura|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_38a1:auto_generated|ram_block1a7 ; |CPU_sakura|lpm_ram_io:inst|altram:sram|altsyncram:ram_block|altsyncram_38a1:auto_generated|q_a[7] ; portadataout0    ;
+; |CPU_sakura|alu_calculate:inst9|LessThan0~0                                                              ; |CPU_sakura|alu_calculate:inst9|LessThan0~0                                                        ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|LessThan0~1                                                              ; |CPU_sakura|alu_calculate:inst9|LessThan0~1                                                        ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|LessThan0~2                                                              ; |CPU_sakura|alu_calculate:inst9|LessThan0~2                                                        ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|LessThan0~3                                                              ; |CPU_sakura|alu_calculate:inst9|LessThan0~3                                                        ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|LessThan0~4                                                              ; |CPU_sakura|alu_calculate:inst9|LessThan0~4                                                        ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|LessThan0~5                                                              ; |CPU_sakura|alu_calculate:inst9|LessThan0~5                                                        ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|LessThan0~6                                                              ; |CPU_sakura|alu_calculate:inst9|LessThan0~6                                                        ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|LessThan0~7                                                              ; |CPU_sakura|alu_calculate:inst9|LessThan0~7                                                        ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|LessThan0~8                                                              ; |CPU_sakura|alu_calculate:inst9|LessThan0~8                                                        ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|LessThan0~9                                                              ; |CPU_sakura|alu_calculate:inst9|LessThan0~9                                                        ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|LessThan0~10                                                             ; |CPU_sakura|alu_calculate:inst9|LessThan0~10                                                       ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|LessThan0~11                                                             ; |CPU_sakura|alu_calculate:inst9|LessThan0~11                                                       ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|LessThan0~12                                                             ; |CPU_sakura|alu_calculate:inst9|LessThan0~12                                                       ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|LessThan0~13                                                             ; |CPU_sakura|alu_calculate:inst9|LessThan0~13                                                       ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|LessThan0~14                                                             ; |CPU_sakura|alu_calculate:inst9|LessThan0~14                                                       ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|LessThan0~15                                                             ; |CPU_sakura|alu_calculate:inst9|LessThan0~15                                                       ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|LessThan0~16                                                             ; |CPU_sakura|alu_calculate:inst9|LessThan0~16                                                       ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|LessThan0~17                                                             ; |CPU_sakura|alu_calculate:inst9|LessThan0~17                                                       ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|LessThan0~18                                                             ; |CPU_sakura|alu_calculate:inst9|LessThan0~18                                                       ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|LessThan0~19                                                             ; |CPU_sakura|alu_calculate:inst9|LessThan0~19                                                       ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|LessThan0~20                                                             ; |CPU_sakura|alu_calculate:inst9|LessThan0~20                                                       ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|LessThan0~21                                                             ; |CPU_sakura|alu_calculate:inst9|LessThan0~21                                                       ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|LessThan0~22                                                             ; |CPU_sakura|alu_calculate:inst9|LessThan0~22                                                       ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|LessThan0~23                                                             ; |CPU_sakura|alu_calculate:inst9|LessThan0~23                                                       ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|LessThan0~24                                                             ; |CPU_sakura|alu_calculate:inst9|LessThan0~24                                                       ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|LessThan0~25                                                             ; |CPU_sakura|alu_calculate:inst9|LessThan0~25                                                       ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|LessThan0~26                                                             ; |CPU_sakura|alu_calculate:inst9|LessThan0~26                                                       ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|LessThan0~27                                                             ; |CPU_sakura|alu_calculate:inst9|LessThan0~27                                                       ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|LessThan0~28                                                             ; |CPU_sakura|alu_calculate:inst9|LessThan0~28                                                       ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|LessThan1~0                                                              ; |CPU_sakura|alu_calculate:inst9|LessThan1~0                                                        ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|LessThan1~1                                                              ; |CPU_sakura|alu_calculate:inst9|LessThan1~1                                                        ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|LessThan1~2                                                              ; |CPU_sakura|alu_calculate:inst9|LessThan1~2                                                        ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|LessThan1~3                                                              ; |CPU_sakura|alu_calculate:inst9|LessThan1~3                                                        ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|LessThan1~4                                                              ; |CPU_sakura|alu_calculate:inst9|LessThan1~4                                                        ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|LessThan1~5                                                              ; |CPU_sakura|alu_calculate:inst9|LessThan1~5                                                        ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|LessThan1~6                                                              ; |CPU_sakura|alu_calculate:inst9|LessThan1~6                                                        ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|LessThan1~7                                                              ; |CPU_sakura|alu_calculate:inst9|LessThan1~7                                                        ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|LessThan1~8                                                              ; |CPU_sakura|alu_calculate:inst9|LessThan1~8                                                        ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|LessThan1~9                                                              ; |CPU_sakura|alu_calculate:inst9|LessThan1~9                                                        ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|LessThan1~10                                                             ; |CPU_sakura|alu_calculate:inst9|LessThan1~10                                                       ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|LessThan1~11                                                             ; |CPU_sakura|alu_calculate:inst9|LessThan1~11                                                       ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|LessThan1~12                                                             ; |CPU_sakura|alu_calculate:inst9|LessThan1~12                                                       ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|LessThan1~13                                                             ; |CPU_sakura|alu_calculate:inst9|LessThan1~13                                                       ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|LessThan1~14                                                             ; |CPU_sakura|alu_calculate:inst9|LessThan1~14                                                       ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|LessThan1~15                                                             ; |CPU_sakura|alu_calculate:inst9|LessThan1~15                                                       ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|LessThan1~16                                                             ; |CPU_sakura|alu_calculate:inst9|LessThan1~16                                                       ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|LessThan1~17                                                             ; |CPU_sakura|alu_calculate:inst9|LessThan1~17                                                       ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|LessThan1~18                                                             ; |CPU_sakura|alu_calculate:inst9|LessThan1~18                                                       ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|LessThan1~19                                                             ; |CPU_sakura|alu_calculate:inst9|LessThan1~19                                                       ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|LessThan1~20                                                             ; |CPU_sakura|alu_calculate:inst9|LessThan1~20                                                       ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|LessThan1~21                                                             ; |CPU_sakura|alu_calculate:inst9|LessThan1~21                                                       ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|LessThan1~22                                                             ; |CPU_sakura|alu_calculate:inst9|LessThan1~22                                                       ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|LessThan1~23                                                             ; |CPU_sakura|alu_calculate:inst9|LessThan1~23                                                       ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|LessThan1~24                                                             ; |CPU_sakura|alu_calculate:inst9|LessThan1~24                                                       ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|LessThan1~26                                                             ; |CPU_sakura|alu_calculate:inst9|LessThan1~26                                                       ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|LessThan1~27                                                             ; |CPU_sakura|alu_calculate:inst9|LessThan1~27                                                       ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|LessThan1~28                                                             ; |CPU_sakura|alu_calculate:inst9|LessThan1~28                                                       ; out0             ;
+; |CPU_sakura|zljsq_pc:inst1|Add0~0                                                                        ; |CPU_sakura|zljsq_pc:inst1|Add0~0                                                                  ; out0             ;
+; |CPU_sakura|zljsq_pc:inst1|Add0~1                                                                        ; |CPU_sakura|zljsq_pc:inst1|Add0~1                                                                  ; out0             ;
+; |CPU_sakura|zljsq_pc:inst1|Add0~2                                                                        ; |CPU_sakura|zljsq_pc:inst1|Add0~2                                                                  ; out0             ;
+; |CPU_sakura|zljsq_pc:inst1|Add0~3                                                                        ; |CPU_sakura|zljsq_pc:inst1|Add0~3                                                                  ; out0             ;
+; |CPU_sakura|zljsq_pc:inst1|Add0~4                                                                        ; |CPU_sakura|zljsq_pc:inst1|Add0~4                                                                  ; out0             ;
+; |CPU_sakura|zljsq_pc:inst1|Add0~12                                                                       ; |CPU_sakura|zljsq_pc:inst1|Add0~12                                                                 ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Add0~0                                                                   ; |CPU_sakura|alu_calculate:inst9|Add0~0                                                             ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Add0~1                                                                   ; |CPU_sakura|alu_calculate:inst9|Add0~1                                                             ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Add0~2                                                                   ; |CPU_sakura|alu_calculate:inst9|Add0~2                                                             ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Add0~3                                                                   ; |CPU_sakura|alu_calculate:inst9|Add0~3                                                             ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Add0~4                                                                   ; |CPU_sakura|alu_calculate:inst9|Add0~4                                                             ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Add0~5                                                                   ; |CPU_sakura|alu_calculate:inst9|Add0~5                                                             ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Add0~6                                                                   ; |CPU_sakura|alu_calculate:inst9|Add0~6                                                             ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Add0~7                                                                   ; |CPU_sakura|alu_calculate:inst9|Add0~7                                                             ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Add0~8                                                                   ; |CPU_sakura|alu_calculate:inst9|Add0~8                                                             ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Add0~9                                                                   ; |CPU_sakura|alu_calculate:inst9|Add0~9                                                             ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Add0~10                                                                  ; |CPU_sakura|alu_calculate:inst9|Add0~10                                                            ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Add0~11                                                                  ; |CPU_sakura|alu_calculate:inst9|Add0~11                                                            ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Add0~12                                                                  ; |CPU_sakura|alu_calculate:inst9|Add0~12                                                            ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Add0~13                                                                  ; |CPU_sakura|alu_calculate:inst9|Add0~13                                                            ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Add0~14                                                                  ; |CPU_sakura|alu_calculate:inst9|Add0~14                                                            ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Add0~15                                                                  ; |CPU_sakura|alu_calculate:inst9|Add0~15                                                            ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Add0~16                                                                  ; |CPU_sakura|alu_calculate:inst9|Add0~16                                                            ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Add0~17                                                                  ; |CPU_sakura|alu_calculate:inst9|Add0~17                                                            ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Add0~18                                                                  ; |CPU_sakura|alu_calculate:inst9|Add0~18                                                            ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Add0~19                                                                  ; |CPU_sakura|alu_calculate:inst9|Add0~19                                                            ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Add0~20                                                                  ; |CPU_sakura|alu_calculate:inst9|Add0~20                                                            ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Add0~21                                                                  ; |CPU_sakura|alu_calculate:inst9|Add0~21                                                            ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Add0~22                                                                  ; |CPU_sakura|alu_calculate:inst9|Add0~22                                                            ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Add0~23                                                                  ; |CPU_sakura|alu_calculate:inst9|Add0~23                                                            ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Add0~24                                                                  ; |CPU_sakura|alu_calculate:inst9|Add0~24                                                            ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Add0~25                                                                  ; |CPU_sakura|alu_calculate:inst9|Add0~25                                                            ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Add0~26                                                                  ; |CPU_sakura|alu_calculate:inst9|Add0~26                                                            ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Add0~27                                                                  ; |CPU_sakura|alu_calculate:inst9|Add0~27                                                            ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Add0~28                                                                  ; |CPU_sakura|alu_calculate:inst9|Add0~28                                                            ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Add0~29                                                                  ; |CPU_sakura|alu_calculate:inst9|Add0~29                                                            ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Add0~30                                                                  ; |CPU_sakura|alu_calculate:inst9|Add0~30                                                            ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Add0~31                                                                  ; |CPU_sakura|alu_calculate:inst9|Add0~31                                                            ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Add0~32                                                                  ; |CPU_sakura|alu_calculate:inst9|Add0~32                                                            ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Add0~33                                                                  ; |CPU_sakura|alu_calculate:inst9|Add0~33                                                            ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Add0~34                                                                  ; |CPU_sakura|alu_calculate:inst9|Add0~34                                                            ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Add0~35                                                                  ; |CPU_sakura|alu_calculate:inst9|Add0~35                                                            ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Add0~36                                                                  ; |CPU_sakura|alu_calculate:inst9|Add0~36                                                            ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Add1~0                                                                   ; |CPU_sakura|alu_calculate:inst9|Add1~0                                                             ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Add1~1                                                                   ; |CPU_sakura|alu_calculate:inst9|Add1~1                                                             ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Add1~2                                                                   ; |CPU_sakura|alu_calculate:inst9|Add1~2                                                             ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Add1~3                                                                   ; |CPU_sakura|alu_calculate:inst9|Add1~3                                                             ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Add1~4                                                                   ; |CPU_sakura|alu_calculate:inst9|Add1~4                                                             ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Add1~5                                                                   ; |CPU_sakura|alu_calculate:inst9|Add1~5                                                             ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Add1~6                                                                   ; |CPU_sakura|alu_calculate:inst9|Add1~6                                                             ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Add1~7                                                                   ; |CPU_sakura|alu_calculate:inst9|Add1~7                                                             ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Add1~8                                                                   ; |CPU_sakura|alu_calculate:inst9|Add1~8                                                             ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Add1~9                                                                   ; |CPU_sakura|alu_calculate:inst9|Add1~9                                                             ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Add1~10                                                                  ; |CPU_sakura|alu_calculate:inst9|Add1~10                                                            ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Add1~11                                                                  ; |CPU_sakura|alu_calculate:inst9|Add1~11                                                            ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Add1~12                                                                  ; |CPU_sakura|alu_calculate:inst9|Add1~12                                                            ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Add1~13                                                                  ; |CPU_sakura|alu_calculate:inst9|Add1~13                                                            ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Add1~14                                                                  ; |CPU_sakura|alu_calculate:inst9|Add1~14                                                            ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Add1~15                                                                  ; |CPU_sakura|alu_calculate:inst9|Add1~15                                                            ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Add1~16                                                                  ; |CPU_sakura|alu_calculate:inst9|Add1~16                                                            ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Add1~17                                                                  ; |CPU_sakura|alu_calculate:inst9|Add1~17                                                            ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Add1~18                                                                  ; |CPU_sakura|alu_calculate:inst9|Add1~18                                                            ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Add1~19                                                                  ; |CPU_sakura|alu_calculate:inst9|Add1~19                                                            ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Add1~20                                                                  ; |CPU_sakura|alu_calculate:inst9|Add1~20                                                            ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Add1~21                                                                  ; |CPU_sakura|alu_calculate:inst9|Add1~21                                                            ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Add1~22                                                                  ; |CPU_sakura|alu_calculate:inst9|Add1~22                                                            ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Add1~23                                                                  ; |CPU_sakura|alu_calculate:inst9|Add1~23                                                            ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Add1~24                                                                  ; |CPU_sakura|alu_calculate:inst9|Add1~24                                                            ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Add1~25                                                                  ; |CPU_sakura|alu_calculate:inst9|Add1~25                                                            ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Add1~26                                                                  ; |CPU_sakura|alu_calculate:inst9|Add1~26                                                            ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Add1~27                                                                  ; |CPU_sakura|alu_calculate:inst9|Add1~27                                                            ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Add1~28                                                                  ; |CPU_sakura|alu_calculate:inst9|Add1~28                                                            ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Add1~29                                                                  ; |CPU_sakura|alu_calculate:inst9|Add1~29                                                            ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Add1~30                                                                  ; |CPU_sakura|alu_calculate:inst9|Add1~30                                                            ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Add1~31                                                                  ; |CPU_sakura|alu_calculate:inst9|Add1~31                                                            ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Add1~32                                                                  ; |CPU_sakura|alu_calculate:inst9|Add1~32                                                            ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Add1~33                                                                  ; |CPU_sakura|alu_calculate:inst9|Add1~33                                                            ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Add2~0                                                                   ; |CPU_sakura|alu_calculate:inst9|Add2~0                                                             ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Add2~1                                                                   ; |CPU_sakura|alu_calculate:inst9|Add2~1                                                             ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Add2~2                                                                   ; |CPU_sakura|alu_calculate:inst9|Add2~2                                                             ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Add2~3                                                                   ; |CPU_sakura|alu_calculate:inst9|Add2~3                                                             ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Add2~4                                                                   ; |CPU_sakura|alu_calculate:inst9|Add2~4                                                             ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Add2~5                                                                   ; |CPU_sakura|alu_calculate:inst9|Add2~5                                                             ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Add2~6                                                                   ; |CPU_sakura|alu_calculate:inst9|Add2~6                                                             ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Add2~7                                                                   ; |CPU_sakura|alu_calculate:inst9|Add2~7                                                             ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Add2~8                                                                   ; |CPU_sakura|alu_calculate:inst9|Add2~8                                                             ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Add2~9                                                                   ; |CPU_sakura|alu_calculate:inst9|Add2~9                                                             ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Add2~10                                                                  ; |CPU_sakura|alu_calculate:inst9|Add2~10                                                            ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Add2~11                                                                  ; |CPU_sakura|alu_calculate:inst9|Add2~11                                                            ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Add2~12                                                                  ; |CPU_sakura|alu_calculate:inst9|Add2~12                                                            ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Add2~13                                                                  ; |CPU_sakura|alu_calculate:inst9|Add2~13                                                            ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Add2~14                                                                  ; |CPU_sakura|alu_calculate:inst9|Add2~14                                                            ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Add2~15                                                                  ; |CPU_sakura|alu_calculate:inst9|Add2~15                                                            ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Add2~16                                                                  ; |CPU_sakura|alu_calculate:inst9|Add2~16                                                            ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Add2~17                                                                  ; |CPU_sakura|alu_calculate:inst9|Add2~17                                                            ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Add2~18                                                                  ; |CPU_sakura|alu_calculate:inst9|Add2~18                                                            ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Add2~19                                                                  ; |CPU_sakura|alu_calculate:inst9|Add2~19                                                            ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Add2~20                                                                  ; |CPU_sakura|alu_calculate:inst9|Add2~20                                                            ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Add2~21                                                                  ; |CPU_sakura|alu_calculate:inst9|Add2~21                                                            ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Add2~22                                                                  ; |CPU_sakura|alu_calculate:inst9|Add2~22                                                            ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Add2~23                                                                  ; |CPU_sakura|alu_calculate:inst9|Add2~23                                                            ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Add2~24                                                                  ; |CPU_sakura|alu_calculate:inst9|Add2~24                                                            ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Add2~25                                                                  ; |CPU_sakura|alu_calculate:inst9|Add2~25                                                            ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Add2~26                                                                  ; |CPU_sakura|alu_calculate:inst9|Add2~26                                                            ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Add2~27                                                                  ; |CPU_sakura|alu_calculate:inst9|Add2~27                                                            ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Add2~28                                                                  ; |CPU_sakura|alu_calculate:inst9|Add2~28                                                            ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Add2~29                                                                  ; |CPU_sakura|alu_calculate:inst9|Add2~29                                                            ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Add2~30                                                                  ; |CPU_sakura|alu_calculate:inst9|Add2~30                                                            ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Add2~31                                                                  ; |CPU_sakura|alu_calculate:inst9|Add2~31                                                            ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Add2~32                                                                  ; |CPU_sakura|alu_calculate:inst9|Add2~32                                                            ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Add2~33                                                                  ; |CPU_sakura|alu_calculate:inst9|Add2~33                                                            ; out0             ;
+; |CPU_sakura|xuanzeqi:inst2|Equal0~0                                                                      ; |CPU_sakura|xuanzeqi:inst2|Equal0~0                                                                ; out0             ;
+; |CPU_sakura|xuanzeqi:inst2|Equal1~0                                                                      ; |CPU_sakura|xuanzeqi:inst2|Equal1~0                                                                ; out0             ;
+; |CPU_sakura|xuanzeqi:inst2|Equal2~0                                                                      ; |CPU_sakura|xuanzeqi:inst2|Equal2~0                                                                ; out0             ;
+; |CPU_sakura|tyjcq:inst5|Equal0~0                                                                         ; |CPU_sakura|tyjcq:inst5|Equal0~0                                                                   ; out0             ;
+; |CPU_sakura|tyjcq:inst5|Equal1~0                                                                         ; |CPU_sakura|tyjcq:inst5|Equal1~0                                                                   ; out0             ;
+; |CPU_sakura|tyjcq:inst5|Equal2~0                                                                         ; |CPU_sakura|tyjcq:inst5|Equal2~0                                                                   ; out0             ;
+; |CPU_sakura|tyjcq:inst5|Equal3~0                                                                         ; |CPU_sakura|tyjcq:inst5|Equal3~0                                                                   ; out0             ;
+; |CPU_sakura|tyjcq:inst5|Equal4~0                                                                         ; |CPU_sakura|tyjcq:inst5|Equal4~0                                                                   ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Equal0~0                                                                 ; |CPU_sakura|alu_calculate:inst9|Equal0~0                                                           ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Equal1~0                                                                 ; |CPU_sakura|alu_calculate:inst9|Equal1~0                                                           ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Equal2~0                                                                 ; |CPU_sakura|alu_calculate:inst9|Equal2~0                                                           ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Equal3~0                                                                 ; |CPU_sakura|alu_calculate:inst9|Equal3~0                                                           ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Equal5~0                                                                 ; |CPU_sakura|alu_calculate:inst9|Equal5~0                                                           ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Equal6~0                                                                 ; |CPU_sakura|alu_calculate:inst9|Equal6~0                                                           ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Equal7~0                                                                 ; |CPU_sakura|alu_calculate:inst9|Equal7~0                                                           ; out0             ;
+; |CPU_sakura|zlymq:inst6|Equal0~0                                                                         ; |CPU_sakura|zlymq:inst6|Equal0~0                                                                   ; out0             ;
+; |CPU_sakura|zlymq:inst6|Equal1~0                                                                         ; |CPU_sakura|zlymq:inst6|Equal1~0                                                                   ; out0             ;
+; |CPU_sakura|zlymq:inst6|Equal2~0                                                                         ; |CPU_sakura|zlymq:inst6|Equal2~0                                                                   ; out0             ;
+; |CPU_sakura|zlymq:inst6|Equal3~0                                                                         ; |CPU_sakura|zlymq:inst6|Equal3~0                                                                   ; out0             ;
+; |CPU_sakura|zlymq:inst6|Equal4~0                                                                         ; |CPU_sakura|zlymq:inst6|Equal4~0                                                                   ; out0             ;
+; |CPU_sakura|zlymq:inst6|Equal5~0                                                                         ; |CPU_sakura|zlymq:inst6|Equal5~0                                                                   ; out0             ;
+; |CPU_sakura|zlymq:inst6|Equal6~0                                                                         ; |CPU_sakura|zlymq:inst6|Equal6~0                                                                   ; out0             ;
+; |CPU_sakura|zlymq:inst6|Equal7~0                                                                         ; |CPU_sakura|zlymq:inst6|Equal7~0                                                                   ; out0             ;
+; |CPU_sakura|zlymq:inst6|Equal8~0                                                                         ; |CPU_sakura|zlymq:inst6|Equal8~0                                                                   ; out0             ;
+; |CPU_sakura|zlymq:inst6|Equal9~0                                                                         ; |CPU_sakura|zlymq:inst6|Equal9~0                                                                   ; out0             ;
+; |CPU_sakura|zlymq:inst6|Equal10~0                                                                        ; |CPU_sakura|zlymq:inst6|Equal10~0                                                                  ; out0             ;
+; |CPU_sakura|zlymq:inst6|Equal11~0                                                                        ; |CPU_sakura|zlymq:inst6|Equal11~0                                                                  ; out0             ;
+; |CPU_sakura|zlymq:inst6|Equal12~0                                                                        ; |CPU_sakura|zlymq:inst6|Equal12~0                                                                  ; out0             ;
+; |CPU_sakura|zlymq:inst6|Equal13~0                                                                        ; |CPU_sakura|zlymq:inst6|Equal13~0                                                                  ; out0             ;
++----------------------------------------------------------------------------------------------------------+----------------------------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++----------------------------------------------------------------------------------------------------------------+
+; Missing 1-Value Coverage                                                                                       ;
++----------------------------------------------+----------------------------------------------+------------------+
+; Node Name                                    ; Output Port Name                             ; Output Port Type ;
++----------------------------------------------+----------------------------------------------+------------------+
+; |CPU_sakura|IN_JCQ[7]                        ; |CPU_sakura|IN_JCQ[7]                        ; out              ;
+; |CPU_sakura|IN_JCQ[6]                        ; |CPU_sakura|IN_JCQ[6]                        ; out              ;
+; |CPU_sakura|IN_JCQ[5]                        ; |CPU_sakura|IN_JCQ[5]                        ; out              ;
+; |CPU_sakura|IN_JCQ[4]                        ; |CPU_sakura|IN_JCQ[4]                        ; out              ;
+; |CPU_sakura|IN_JCQ[3]                        ; |CPU_sakura|IN_JCQ[3]                        ; out              ;
+; |CPU_sakura|IN_JCQ[2]                        ; |CPU_sakura|IN_JCQ[2]                        ; out              ;
+; |CPU_sakura|IN_JCQ[1]                        ; |CPU_sakura|IN_JCQ[1]                        ; out              ;
+; |CPU_sakura|IN_JCQ[0]                        ; |CPU_sakura|IN_JCQ[0]                        ; out              ;
+; |CPU_sakura|inst13                           ; |CPU_sakura|inst13                           ; out0             ;
+; |CPU_sakura|JCQ_B[7]                         ; |CPU_sakura|JCQ_B[7]                         ; pin_out          ;
+; |CPU_sakura|JCQ_B[6]                         ; |CPU_sakura|JCQ_B[6]                         ; pin_out          ;
+; |CPU_sakura|JCQ_B[5]                         ; |CPU_sakura|JCQ_B[5]                         ; pin_out          ;
+; |CPU_sakura|JCQ_B[4]                         ; |CPU_sakura|JCQ_B[4]                         ; pin_out          ;
+; |CPU_sakura|JCQ_B[3]                         ; |CPU_sakura|JCQ_B[3]                         ; pin_out          ;
+; |CPU_sakura|JCQ_B[1]                         ; |CPU_sakura|JCQ_B[1]                         ; pin_out          ;
+; |CPU_sakura|JCQ_B[0]                         ; |CPU_sakura|JCQ_B[0]                         ; pin_out          ;
+; |CPU_sakura|JCQ_C[7]                         ; |CPU_sakura|JCQ_C[7]                         ; pin_out          ;
+; |CPU_sakura|JCQ_C[5]                         ; |CPU_sakura|JCQ_C[5]                         ; pin_out          ;
+; |CPU_sakura|JCQ_C[3]                         ; |CPU_sakura|JCQ_C[3]                         ; pin_out          ;
+; |CPU_sakura|JCQ_C[2]                         ; |CPU_sakura|JCQ_C[2]                         ; pin_out          ;
+; |CPU_sakura|JCQ_C[1]                         ; |CPU_sakura|JCQ_C[1]                         ; pin_out          ;
+; |CPU_sakura|JCQ_C[0]                         ; |CPU_sakura|JCQ_C[0]                         ; pin_out          ;
+; |CPU_sakura|JCQ_OUT[5]                       ; |CPU_sakura|JCQ_OUT[5]                       ; pin_out          ;
+; |CPU_sakura|JCQ_OUT[4]                       ; |CPU_sakura|JCQ_OUT[4]                       ; pin_out          ;
+; |CPU_sakura|JCQ_OUT[3]                       ; |CPU_sakura|JCQ_OUT[3]                       ; pin_out          ;
+; |CPU_sakura|JCQ_OUT[0]                       ; |CPU_sakura|JCQ_OUT[0]                       ; pin_out          ;
+; |CPU_sakura|PC_COUNT[5]                      ; |CPU_sakura|PC_COUNT[5]                      ; pin_out          ;
+; |CPU_sakura|PC_COUNT[4]                      ; |CPU_sakura|PC_COUNT[4]                      ; pin_out          ;
+; |CPU_sakura|status_3:inst15|o[0]             ; |CPU_sakura|status_3:inst15|o[0]             ; out              ;
+; |CPU_sakura|status_3:inst15|o[3]             ; |CPU_sakura|status_3:inst15|o[3]             ; out              ;
+; |CPU_sakura|status_3:inst15|o[4]             ; |CPU_sakura|status_3:inst15|o[4]             ; out              ;
+; |CPU_sakura|status_3:inst15|o[5]             ; |CPU_sakura|status_3:inst15|o[5]             ; out              ;
+; |CPU_sakura|zljsq_pc:inst1|count~2           ; |CPU_sakura|zljsq_pc:inst1|count~2           ; out              ;
+; |CPU_sakura|zljsq_pc:inst1|count~3           ; |CPU_sakura|zljsq_pc:inst1|count~3           ; out              ;
+; |CPU_sakura|zljsq_pc:inst1|count[4]          ; |CPU_sakura|zljsq_pc:inst1|count[4]          ; regout           ;
+; |CPU_sakura|zljsq_pc:inst1|count[5]          ; |CPU_sakura|zljsq_pc:inst1|count[5]          ; regout           ;
+; |CPU_sakura|alu_sh:inst10|z~0                ; |CPU_sakura|alu_sh:inst10|z~0                ; out              ;
+; |CPU_sakura|alu_sh:inst10|z~1                ; |CPU_sakura|alu_sh:inst10|z~1                ; out              ;
+; |CPU_sakura|alu_sh:inst10|z                  ; |CPU_sakura|alu_sh:inst10|z                  ; out              ;
+; |CPU_sakura|tyjcq:inst5|C[0]                 ; |CPU_sakura|tyjcq:inst5|C[0]                 ; regout           ;
+; |CPU_sakura|tyjcq:inst5|AO~0                 ; |CPU_sakura|tyjcq:inst5|AO~0                 ; out              ;
+; |CPU_sakura|tyjcq:inst5|BO~0                 ; |CPU_sakura|tyjcq:inst5|BO~0                 ; out              ;
+; |CPU_sakura|tyjcq:inst5|B~2                  ; |CPU_sakura|tyjcq:inst5|B~2                  ; out              ;
+; |CPU_sakura|tyjcq:inst5|B~7                  ; |CPU_sakura|tyjcq:inst5|B~7                  ; out              ;
+; |CPU_sakura|tyjcq:inst5|B~10                 ; |CPU_sakura|tyjcq:inst5|B~10                 ; out              ;
+; |CPU_sakura|tyjcq:inst5|B~15                 ; |CPU_sakura|tyjcq:inst5|B~15                 ; out              ;
+; |CPU_sakura|tyjcq:inst5|C[1]                 ; |CPU_sakura|tyjcq:inst5|C[1]                 ; regout           ;
+; |CPU_sakura|tyjcq:inst5|C[2]                 ; |CPU_sakura|tyjcq:inst5|C[2]                 ; regout           ;
+; |CPU_sakura|tyjcq:inst5|C[3]                 ; |CPU_sakura|tyjcq:inst5|C[3]                 ; regout           ;
+; |CPU_sakura|tyjcq:inst5|C[5]                 ; |CPU_sakura|tyjcq:inst5|C[5]                 ; regout           ;
+; |CPU_sakura|tyjcq:inst5|C[7]                 ; |CPU_sakura|tyjcq:inst5|C[7]                 ; regout           ;
+; |CPU_sakura|tyjcq:inst5|B[0]                 ; |CPU_sakura|tyjcq:inst5|B[0]                 ; regout           ;
+; |CPU_sakura|tyjcq:inst5|B[1]                 ; |CPU_sakura|tyjcq:inst5|B[1]                 ; regout           ;
+; |CPU_sakura|tyjcq:inst5|B[3]                 ; |CPU_sakura|tyjcq:inst5|B[3]                 ; regout           ;
+; |CPU_sakura|tyjcq:inst5|B[4]                 ; |CPU_sakura|tyjcq:inst5|B[4]                 ; regout           ;
+; |CPU_sakura|tyjcq:inst5|B[5]                 ; |CPU_sakura|tyjcq:inst5|B[5]                 ; regout           ;
+; |CPU_sakura|tyjcq:inst5|B[6]                 ; |CPU_sakura|tyjcq:inst5|B[6]                 ; regout           ;
+; |CPU_sakura|tyjcq:inst5|B[7]                 ; |CPU_sakura|tyjcq:inst5|B[7]                 ; regout           ;
+; |CPU_sakura|alu_calculate:inst9|c~1          ; |CPU_sakura|alu_calculate:inst9|c~1          ; out              ;
+; |CPU_sakura|alu_calculate:inst9|z~1          ; |CPU_sakura|alu_calculate:inst9|z~1          ; out              ;
+; |CPU_sakura|alu_calculate:inst9|z~2          ; |CPU_sakura|alu_calculate:inst9|z~2          ; out              ;
+; |CPU_sakura|alu_calculate:inst9|z~3          ; |CPU_sakura|alu_calculate:inst9|z~3          ; out              ;
+; |CPU_sakura|alu_calculate:inst9|z~4          ; |CPU_sakura|alu_calculate:inst9|z~4          ; out              ;
+; |CPU_sakura|alu_calculate:inst9|z            ; |CPU_sakura|alu_calculate:inst9|z            ; out              ;
+; |CPU_sakura|cz_jcq:inst11|z_o                ; |CPU_sakura|cz_jcq:inst11|z_o                ; regout           ;
+; |CPU_sakura|control_sigch:inst7|panduan~0    ; |CPU_sakura|control_sigch:inst7|panduan~0    ; out0             ;
+; |CPU_sakura|control_sigch:inst7|IN_PC~2      ; |CPU_sakura|control_sigch:inst7|IN_PC~2      ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|LessThan1~25 ; |CPU_sakura|alu_calculate:inst9|LessThan1~25 ; out0             ;
+; |CPU_sakura|zljsq_pc:inst1|Add0~5            ; |CPU_sakura|zljsq_pc:inst1|Add0~5            ; out0             ;
+; |CPU_sakura|zljsq_pc:inst1|Add0~6            ; |CPU_sakura|zljsq_pc:inst1|Add0~6            ; out0             ;
+; |CPU_sakura|zljsq_pc:inst1|Add0~7            ; |CPU_sakura|zljsq_pc:inst1|Add0~7            ; out0             ;
+; |CPU_sakura|zljsq_pc:inst1|Add0~8            ; |CPU_sakura|zljsq_pc:inst1|Add0~8            ; out0             ;
+; |CPU_sakura|zljsq_pc:inst1|Add0~9            ; |CPU_sakura|zljsq_pc:inst1|Add0~9            ; out0             ;
+; |CPU_sakura|zljsq_pc:inst1|Add0~11           ; |CPU_sakura|zljsq_pc:inst1|Add0~11           ; out0             ;
+; |CPU_sakura|alu_sh:inst10|Equal0~0           ; |CPU_sakura|alu_sh:inst10|Equal0~0           ; out0             ;
+; |CPU_sakura|alu_sh:inst10|Equal1~0           ; |CPU_sakura|alu_sh:inst10|Equal1~0           ; out0             ;
+; |CPU_sakura|alu_sh:inst10|Equal2~0           ; |CPU_sakura|alu_sh:inst10|Equal2~0           ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Equal4~0     ; |CPU_sakura|alu_calculate:inst9|Equal4~0     ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Equal8~0     ; |CPU_sakura|alu_calculate:inst9|Equal8~0     ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Equal9~0     ; |CPU_sakura|alu_calculate:inst9|Equal9~0     ; out0             ;
++----------------------------------------------+----------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++----------------------------------------------------------------------------------------------------------------+
+; Missing 0-Value Coverage                                                                                       ;
++----------------------------------------------+----------------------------------------------+------------------+
+; Node Name                                    ; Output Port Name                             ; Output Port Type ;
++----------------------------------------------+----------------------------------------------+------------------+
+; |CPU_sakura|IN_JCQ[7]                        ; |CPU_sakura|IN_JCQ[7]                        ; out              ;
+; |CPU_sakura|IN_JCQ[6]                        ; |CPU_sakura|IN_JCQ[6]                        ; out              ;
+; |CPU_sakura|IN_JCQ[5]                        ; |CPU_sakura|IN_JCQ[5]                        ; out              ;
+; |CPU_sakura|IN_JCQ[4]                        ; |CPU_sakura|IN_JCQ[4]                        ; out              ;
+; |CPU_sakura|IN_JCQ[3]                        ; |CPU_sakura|IN_JCQ[3]                        ; out              ;
+; |CPU_sakura|IN_JCQ[2]                        ; |CPU_sakura|IN_JCQ[2]                        ; out              ;
+; |CPU_sakura|IN_JCQ[1]                        ; |CPU_sakura|IN_JCQ[1]                        ; out              ;
+; |CPU_sakura|IN_JCQ[0]                        ; |CPU_sakura|IN_JCQ[0]                        ; out              ;
+; |CPU_sakura|JCQ_B[7]                         ; |CPU_sakura|JCQ_B[7]                         ; pin_out          ;
+; |CPU_sakura|JCQ_B[6]                         ; |CPU_sakura|JCQ_B[6]                         ; pin_out          ;
+; |CPU_sakura|JCQ_B[4]                         ; |CPU_sakura|JCQ_B[4]                         ; pin_out          ;
+; |CPU_sakura|JCQ_B[3]                         ; |CPU_sakura|JCQ_B[3]                         ; pin_out          ;
+; |CPU_sakura|JCQ_B[2]                         ; |CPU_sakura|JCQ_B[2]                         ; pin_out          ;
+; |CPU_sakura|JCQ_B[1]                         ; |CPU_sakura|JCQ_B[1]                         ; pin_out          ;
+; |CPU_sakura|JCQ_C[7]                         ; |CPU_sakura|JCQ_C[7]                         ; pin_out          ;
+; |CPU_sakura|JCQ_C[5]                         ; |CPU_sakura|JCQ_C[5]                         ; pin_out          ;
+; |CPU_sakura|JCQ_OUT[7]                       ; |CPU_sakura|JCQ_OUT[7]                       ; pin_out          ;
+; |CPU_sakura|JCQ_OUT[6]                       ; |CPU_sakura|JCQ_OUT[6]                       ; pin_out          ;
+; |CPU_sakura|JCQ_OUT[2]                       ; |CPU_sakura|JCQ_OUT[2]                       ; pin_out          ;
+; |CPU_sakura|JCQ_OUT[1]                       ; |CPU_sakura|JCQ_OUT[1]                       ; pin_out          ;
+; |CPU_sakura|PC_COUNT[6]                      ; |CPU_sakura|PC_COUNT[6]                      ; pin_out          ;
+; |CPU_sakura|PC_COUNT[5]                      ; |CPU_sakura|PC_COUNT[5]                      ; pin_out          ;
+; |CPU_sakura|PC_COUNT[4]                      ; |CPU_sakura|PC_COUNT[4]                      ; pin_out          ;
+; |CPU_sakura|status_3:inst15|o[1]             ; |CPU_sakura|status_3:inst15|o[1]             ; out              ;
+; |CPU_sakura|status_3:inst15|o[2]             ; |CPU_sakura|status_3:inst15|o[2]             ; out              ;
+; |CPU_sakura|status_3:inst15|o[6]             ; |CPU_sakura|status_3:inst15|o[6]             ; out              ;
+; |CPU_sakura|status_3:inst15|o[7]             ; |CPU_sakura|status_3:inst15|o[7]             ; out              ;
+; |CPU_sakura|zljsq_pc:inst1|count~1           ; |CPU_sakura|zljsq_pc:inst1|count~1           ; out              ;
+; |CPU_sakura|zljsq_pc:inst1|count~2           ; |CPU_sakura|zljsq_pc:inst1|count~2           ; out              ;
+; |CPU_sakura|zljsq_pc:inst1|count~3           ; |CPU_sakura|zljsq_pc:inst1|count~3           ; out              ;
+; |CPU_sakura|zljsq_pc:inst1|count~9           ; |CPU_sakura|zljsq_pc:inst1|count~9           ; out              ;
+; |CPU_sakura|zljsq_pc:inst1|count[4]          ; |CPU_sakura|zljsq_pc:inst1|count[4]          ; regout           ;
+; |CPU_sakura|zljsq_pc:inst1|count[5]          ; |CPU_sakura|zljsq_pc:inst1|count[5]          ; regout           ;
+; |CPU_sakura|zljsq_pc:inst1|count[6]          ; |CPU_sakura|zljsq_pc:inst1|count[6]          ; regout           ;
+; |CPU_sakura|alu_sh:inst10|z~0                ; |CPU_sakura|alu_sh:inst10|z~0                ; out              ;
+; |CPU_sakura|alu_sh:inst10|z~1                ; |CPU_sakura|alu_sh:inst10|z~1                ; out              ;
+; |CPU_sakura|tyjcq:inst5|AO~0                 ; |CPU_sakura|tyjcq:inst5|AO~0                 ; out              ;
+; |CPU_sakura|tyjcq:inst5|BO~0                 ; |CPU_sakura|tyjcq:inst5|BO~0                 ; out              ;
+; |CPU_sakura|tyjcq:inst5|C[5]                 ; |CPU_sakura|tyjcq:inst5|C[5]                 ; regout           ;
+; |CPU_sakura|tyjcq:inst5|C[7]                 ; |CPU_sakura|tyjcq:inst5|C[7]                 ; regout           ;
+; |CPU_sakura|tyjcq:inst5|B[1]                 ; |CPU_sakura|tyjcq:inst5|B[1]                 ; regout           ;
+; |CPU_sakura|tyjcq:inst5|B[2]                 ; |CPU_sakura|tyjcq:inst5|B[2]                 ; regout           ;
+; |CPU_sakura|tyjcq:inst5|B[3]                 ; |CPU_sakura|tyjcq:inst5|B[3]                 ; regout           ;
+; |CPU_sakura|tyjcq:inst5|B[4]                 ; |CPU_sakura|tyjcq:inst5|B[4]                 ; regout           ;
+; |CPU_sakura|tyjcq:inst5|B[6]                 ; |CPU_sakura|tyjcq:inst5|B[6]                 ; regout           ;
+; |CPU_sakura|tyjcq:inst5|B[7]                 ; |CPU_sakura|tyjcq:inst5|B[7]                 ; regout           ;
+; |CPU_sakura|alu_calculate:inst9|c~1          ; |CPU_sakura|alu_calculate:inst9|c~1          ; out              ;
+; |CPU_sakura|alu_calculate:inst9|z~1          ; |CPU_sakura|alu_calculate:inst9|z~1          ; out              ;
+; |CPU_sakura|alu_calculate:inst9|z~2          ; |CPU_sakura|alu_calculate:inst9|z~2          ; out              ;
+; |CPU_sakura|alu_calculate:inst9|z~3          ; |CPU_sakura|alu_calculate:inst9|z~3          ; out              ;
+; |CPU_sakura|alu_calculate:inst9|z~4          ; |CPU_sakura|alu_calculate:inst9|z~4          ; out              ;
+; |CPU_sakura|alu_calculate:inst9|z            ; |CPU_sakura|alu_calculate:inst9|z            ; out              ;
+; |CPU_sakura|cz_jcq:inst11|z_o                ; |CPU_sakura|cz_jcq:inst11|z_o                ; regout           ;
+; |CPU_sakura|control_sigch:inst7|panduan~0    ; |CPU_sakura|control_sigch:inst7|panduan~0    ; out0             ;
+; |CPU_sakura|control_sigch:inst7|IN_PC~2      ; |CPU_sakura|control_sigch:inst7|IN_PC~2      ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|LessThan1~25 ; |CPU_sakura|alu_calculate:inst9|LessThan1~25 ; out0             ;
+; |CPU_sakura|zljsq_pc:inst1|Add0~5            ; |CPU_sakura|zljsq_pc:inst1|Add0~5            ; out0             ;
+; |CPU_sakura|zljsq_pc:inst1|Add0~6            ; |CPU_sakura|zljsq_pc:inst1|Add0~6            ; out0             ;
+; |CPU_sakura|zljsq_pc:inst1|Add0~7            ; |CPU_sakura|zljsq_pc:inst1|Add0~7            ; out0             ;
+; |CPU_sakura|zljsq_pc:inst1|Add0~8            ; |CPU_sakura|zljsq_pc:inst1|Add0~8            ; out0             ;
+; |CPU_sakura|zljsq_pc:inst1|Add0~9            ; |CPU_sakura|zljsq_pc:inst1|Add0~9            ; out0             ;
+; |CPU_sakura|zljsq_pc:inst1|Add0~10           ; |CPU_sakura|zljsq_pc:inst1|Add0~10           ; out0             ;
+; |CPU_sakura|zljsq_pc:inst1|Add0~11           ; |CPU_sakura|zljsq_pc:inst1|Add0~11           ; out0             ;
+; |CPU_sakura|alu_sh:inst10|Equal0~0           ; |CPU_sakura|alu_sh:inst10|Equal0~0           ; out0             ;
+; |CPU_sakura|alu_sh:inst10|Equal1~0           ; |CPU_sakura|alu_sh:inst10|Equal1~0           ; out0             ;
+; |CPU_sakura|alu_sh:inst10|Equal2~0           ; |CPU_sakura|alu_sh:inst10|Equal2~0           ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Equal4~0     ; |CPU_sakura|alu_calculate:inst9|Equal4~0     ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Equal8~0     ; |CPU_sakura|alu_calculate:inst9|Equal8~0     ; out0             ;
+; |CPU_sakura|alu_calculate:inst9|Equal9~0     ; |CPU_sakura|alu_calculate:inst9|Equal9~0     ; out0             ;
+; |CPU_sakura|control_sigch:inst7|Equal0~0     ; |CPU_sakura|control_sigch:inst7|Equal0~0     ; out0             ;
++----------------------------------------------+----------------------------------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.0 Build 184 04/29/2009 Service Pack 1 SJ Web Edition
+    Info: Processing started: Sun Jan 07 10:45:18 2018
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off CPU_sakura -c CPU_sakura
+Info: Using vector source file "D:/Program Files/qurtus2/quartus/CPU_jianyanpro/CPU_all/CPU_sakura.vwf"
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      85.05 %
+Info: Number of transitions in simulation is 7975
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 176 megabytes
+    Info: Processing ended: Sun Jan 07 10:45:19 2018
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
+
+

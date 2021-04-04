@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="CPU_sakura">
+		<CBX_INST_ENTRY INSTANCE_NAME="|CPU_sakura|LPM_RAM_IO:inst|altram:sram|altsyncram:ram_block" CBX_FILE_NAME="altsyncram_38a1.tdf"/>
+	</PROJECT>
+</LOG_ROOT>
